@@ -1,0 +1,63 @@
+<?xml version="0.1" encoding="utf-8" standalone="yes"?>
+<channel>
+    <id>xtheatre</id>
+    <name>Xtheatre</name>
+
+    <active>true</active>
+    <adult>true</adult>
+    <language>es</language>
+
+    <fanart>https://raw.githubusercontent.com/Inter95/tvguia/master/thumbnails/adults/xthearebg.jpg</fanart>
+    <thumbnail>https://xtheatre.net/wp-content/uploads/xtlogo.jpg</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/Inter95/tvguia/master/thumbnails/adults/xthearebm.png</bannermenu>
+
+    <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    <version>1</version>
+
+    <changes>
+        <change>
+            <date>07/03/2017</date>
+            <autor></autor>
+            <description>Primera version del canal</description>
+        </change>
+    </changes>
+
+    <categories>
+        <category>adult</category>
+    </categories>
+
+    <settings>
+        <include_in_global_search>disabled</include_in_global_search>
+    </settings>
+
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+
+    <settings>
+        <id>modo_grafico</id>
+        <type>bool</type>
+        <label>Buscar información extra</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+    <settings>
+        <id>perfil</id>
+        <type>list</type>
+        <label>Perfil de color</label>
+        <default>3</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+        <lvalues>Sin color</lvalues>
+        <lvalues>Perfil 3</lvalues>
+        <lvalues>Perfil 2</lvalues>
+        <lvalues>Perfil 1</lvalues>
+    </settings>
+
+</channel>

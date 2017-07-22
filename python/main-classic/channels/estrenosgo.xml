@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>estrenosgo</id>
+	<name>EstrenosGo</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart>https://github.com/master-1970/resources/raw/master/images/fanart/estrenosgo.png</fanart>
+	<thumbnail>https://github.com/master-1970/resources/raw/master/images/squares/estrenosgo.png</thumbnail>
+	<bannermenu>https://github.com/master-1970/resources/raw/master/images/bannermenu/estrenosgo.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>1</version>
+
+	<changes>
+		<change>
+			<date>15/05/16</date>
+			<autor></autor>
+			<description>Compatibilidad con python anteriores a la 2.7</description>
+		</change>
+		<change>
+			<date>03/05/16</date>
+			<autor></autor>
+			<description>Modificado por cambios en la web</description>
+		</change>
+		<change> 
+			<date>29/04/16</date>
+			<autor></autor>
+			<description>Version inicial</description>
+		</change>
+	</changes>
+		
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+</channel>

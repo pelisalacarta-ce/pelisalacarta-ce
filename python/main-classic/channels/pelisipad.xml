@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelisipad</id>
+	<name>PelisIpad</name>
+	<language>es</language>
+	<active>true</active>
+
+	<version>1</version>
+	<changes>
+		<change>
+			<date>21/03/17</date>
+			<autor></autor>
+			<description>Primera versión</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/FzLmGKK.png</thumbnail>
+	<bannermenu></bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+		<lvalues>Ninguno</lvalues>
+	</settings>
+</channel>

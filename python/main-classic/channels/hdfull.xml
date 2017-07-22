@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>hdfull</id>
+	<name>HDFull</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/hdfull.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/hdfull.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    <version>10</version>
+	<changes>
+        <change>
+            <date>30/05/2017</date>
+            <autor></autor>
+            <description>Arreglada la extracción de enlaces por cambios en la web</description>
+        </change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+        <change>
+            <date>21/03/2017</date>
+            <autor></autor>
+            <description>Pequeño fix para corregir algunas urls de los vídeos que se extraían mal</description>
+        </change>
+        <change>
+            <date>02/02/2017</date>
+            <autor></autor>
+            <description>Arreglada la extracción de enlaces por cambios en la web</description>
+        </change>
+        <change>
+            <date>05/01/2017</date>
+            <autor></autor>
+            <description>Corregido debido a cloudflare</description>
+        </change>
+	</changes>
+
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>hdfulluser</id>
+		<type>text</type>
+		<label>@30014</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>hdfullpassword</id>
+		<type>text</type>
+		<label>@30015</label>
+		<hidden>true</hidden>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

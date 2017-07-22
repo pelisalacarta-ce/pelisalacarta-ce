@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>porntrex</id>
+	<name>Porntrex</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>true</adult>
+
+	<version>1</version>
+	<changes>
+		<change>
+			<date>29/04/2017</date>
+			<autor></autor>
+			<description>Primera versión</description>
+		</change>
+	</changes>
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/n8SUCE9.png?1</thumbnail>
+	<bannermenu></bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+
+	<settings>
+		<id>menu_info</id>
+		<type>bool</type>
+		<label>Mostrar menú antes de reproducir con imágenes</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+</channel>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>peliculasgratis</id>
+	<name>PeliculasGratis</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+    
+	<fanart></fanart>
+	<thumbnail>http://imgur.com/ThH8Zmk.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pasateatorrent.png</bannermenu>
+
+	<update_url></update_url>
+    <version>2</version>
+    <changes>
+        <change>
+          <date>13/01/2017</date>
+          <autor></autor>
+         <description>Release</description>
+        </change>
+        <change>
+            <date>04/04/2017</date>
+            <autor></autor>
+            <description>Reparación cambios web</description>
+        </change>
+    </changes>
+	<categories>
+		<category>torrent</category>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

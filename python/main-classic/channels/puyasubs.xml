@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>puyasubs</id>
+	<name>PuyaSubs!</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+	
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/aad4psi.png</thumbnail>
+	<bannermenu>http://i.imgur.com/trFDT39.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+	<changes>
+        <change>
+            <date>28/05/2017</date>
+            <autor></autor>
+            <description>Cambio de dominio</description>
+        </change>
+        <change>
+            <date>09/05/2017</date>
+            <autor></autor>
+            <description>Corregida seccion lista de torrents y regex de listados</description>
+        </change>
+        <change>
+            <date>10/11/2016</date>
+            <autor></autor>
+            <description>Primera versión</description>
+        </change>
+	</changes>
+
+	<categories>
+		<category>anime</category>
+	</categories>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+		<lvalues>Ninguno</lvalues>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra (TMDB)</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>include_in_newest_anime</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Anime</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

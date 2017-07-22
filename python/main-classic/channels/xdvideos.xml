@@ -1,0 +1,30 @@
+﻿<?xml version="0.1" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>xdvideos</id>
+	<name>XDVideos</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/vKcZxXS.png</thumbnail>
+	<bannermenu></bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>1</version>
+	
+    <changes>
+		<change>
+			<date>18/05/2017</date>
+			<autor></autor>
+			<description>Primera Version</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>serie</category>
+		<category>latino</category>
+	</categories>
+
+</channel>

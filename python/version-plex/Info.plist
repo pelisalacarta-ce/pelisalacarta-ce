@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- A string property containing a unique identifier for the plug-in. -->
+	<key>CFBundleIdentifier</key>
+	<string>info.mimediacenter.pelisalacarta</string>
+    
+    <!-- A string property specifying the bundle’s target framework version. -->
+	<key>PlexFrameworkVersion</key>
+	<string>2</string>
+
+    <!-- A string plug-in identifying the class of the bundle. -->
+	<key>PlexPluginClass</key>
+	<string>Content</string>
+    
+    <!-- A string specifying a comma-separated list of client platforms supported by the bundle’s contents. -->
+	<key>PlexClientPlatforms</key>
+	<string>*</string>
+
+    <!-- Necesario para usar librerías externas - http://forums.plexapp.com/index.php/topic/47441-3rd-party-python-modules/ -->
+    <key>PlexPluginCodePolicy</key>
+    <string>Elevated</string>
+
+    <key>PlexURLServices</key>
+    <dict>
+       <key>UniversalResolver</key>
+       <dict>
+          <key>Identifier</key>
+          <string>info.mimediacenter.pelisalacarta.universalresolver</string>
+          <key>URLPattern</key>
+          <string>pelisalacarta://</string>
+       </dict>
+    </dict>
+
+</dict>
+</plist>

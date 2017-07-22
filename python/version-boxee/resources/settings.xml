@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+        <setting id="player_type" type="enum" values="Auto|MPlayer|DVDPlayer" label="30000" default="2"/>
+        <setting id="player_mode" type="enum" values="Direct|SetResolvedUrl|Built-In|Download and Play" label="30044" default="0"/>
+        <setting id="default_action" type="enum" lvalues="30006|30007|30008|30009" label="30005" default="0"/>
+        <setting id="thumbnail_type" type="enum" lvalues="30011|30012|30200" label="30010" default="2"/>
+        <setting id="channel_language" type="labelenum" values="all|es|en|it" label="30019" default="all"/>
+        <setting id="forceview" type="bool" label="30043" default="false"/>
+        <setting id="debug" type="bool" label="30003" default="false"/>
+        <setting type="sep"/>
+        <setting label="Canales para adultos" type="lsep"/>
+        <setting id="adult_mode" type="enum" values="Nunca|Siempre" label="30002" default="0"/>
+        <setting id="adult_pin" type="text" label="PIN para abrir canal de adultos" option="hidden" default=""/>
+
+        <setting type="sep"/>
+        <setting id="hidepremium" type="bool" label="Ocultar servidores de pago sin cuenta" default="false"/>
+
+        <setting type="sep"/>
+        <setting id="realdebridpremium" type="bool" label="Real-Debrid" default="false"/>
+
+        <setting type="sep"/>
+        <setting id="alldebridpremium" type="bool" label="Alldebrid" default="false"/>
+        <setting id="alldebriduser" type="text" label="30014" enable="eq(-1,true)" default=""/>
+        <setting id="alldebridpassword" type="text" option="hidden" label="30015" enable="!eq(-1,)+eq(-2,true)" default=""/>
+
+        <setting type="sep"/>
+        <setting id="uploadedtopremium" type="bool" label="Uploaded.to" default="false"/>
+        <setting id="uploadedtouser" type="text" label="30014" enable="eq(-1,true)" default=""/>
+        <setting id="uploadedtopassword" type="text" option="hidden" label="30015" enable="!eq(-1,)+eq(-2,true)" default=""/>
+
+        <setting type="sep"/>
+        <setting id="nowvideopremium" type="bool" label="Nowvideo" default="false"/>
+        <setting id="nowvideouser" type="text" label="30014" enable="eq(-1,true)" default=""/>
+        <setting id="nowvideopassword" type="text" option="hidden" label="30015" enable="!eq(-1,)+eq(-2,true)" default=""/>
+
+        <setting type="sep"/>
+        <setting id="onefichierpremium" type="bool" label="onefichier" default="false"/>
+        <setting id="onefichieruser" type="text" label="30014" enable="eq(-1,true)" default=""/>
+        <setting id="onefichierpassword" type="text" option="hidden" label="30015" enable="!eq(-1,)+eq(-2,true)" default=""/>
+
+        <setting type="sep"/>
+        <setting id="filesmonsterpremium" type="bool" label="Filesmonster" default="false"/>
+        <setting id="filesmonsteruser" type="text" label="30014" enable="eq(-1,true)" default=""/>
+        <setting id="filesmonsterpassword" type="text" label="30015" option="hidden" enable="!eq(-1,)+eq(-2,true)" default=""/>
+
+        <setting type="sep"/>
+        <setting id="jdownloader_enabled" type="bool" label="JDownloader" default="false"/>
+        <setting id="jdownloader" type="text" label="30022" enable="eq(-1,true)" default="http://127.0.0.1:10025"/>
+
+        <setting type="sep"/>
+        <setting id="personalchannel" type="bool" label="30013" default="false"/>
+        <setting id="personalchannelname" type="text" label="30048" enable="eq(-1,true)" default="Ejemplo de canal personal"/>
+        <setting id="personalchannellogo" type="text" label="30049" enable="eq(-2,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/sample.png"/>
+        <setting id="personalchannelurl" type="text" label="30045" enable="eq(-3,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/samplefeed.rss"/>
+        <setting id="personalchannelpage" type="text" label="30047" enable="eq(-4,true)" default="100"/>
+
+        <setting type="sep"/>
+        <setting id="personalchannel2" type="bool" label="30013" default="false"/>
+        <setting id="personalchannelname2" type="text" label="30048" enable="eq(-1,true)" default="Ejemplo de canal personal"/>
+        <setting id="personalchannellogo2" type="text" label="30049" enable="eq(-2,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/sample.png"/>
+        <setting id="personalchannelurl2" type="text" label="30045" enable="eq(-3,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/samplefeed.rss"/>
+        <setting id="personalchannelpage2" type="text" label="30047" enable="eq(-4,true)" default="100"/>
+
+        <setting type="sep"/>
+        <setting id="personalchannel3" type="bool" label="30013" default="false"/>
+        <setting id="personalchannelname3" type="text" label="30048" enable="eq(-1,true)" default="Ejemplo de canal personal"/>
+        <setting id="personalchannellogo3" type="text" label="30049" enable="eq(-2,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/sample.png"/>
+        <setting id="personalchannelurl3" type="text" label="30045" enable="eq(-3,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/samplefeed.rss"/>
+        <setting id="personalchannelpage3" type="text" label="30047" enable="eq(-4,true)" default="100"/>
+
+        <setting type="sep"/>
+        <setting id="personalchannel4" type="bool" label="30013" default="false"/>
+        <setting id="personalchannelname4" type="text" label="30048" enable="eq(-1,true)" default="Ejemplo de canal personal"/>
+        <setting id="personalchannellogo4" type="text" label="30049" enable="eq(-2,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/sample.png"/>
+        <setting id="personalchannelurl4" type="text" label="30045" enable="eq(-3,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/samplefeed.rss"/>
+        <setting id="personalchannelpage4" type="text" label="30047" enable="eq(-4,true)" default="100"/>
+
+        <setting type="sep"/>
+        <setting id="personalchannel5" type="bool" label="30013" default="false"/>
+        <setting id="personalchannelname5" type="text" label="30048" enable="eq(-1,true)" default="Ejemplo de canal personal"/>
+        <setting id="personalchannellogo5" type="text" label="30049" enable="eq(-2,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/sample.png"/>
+        <setting id="personalchannelurl5" type="text" label="30045" enable="eq(-3,true)" default="http://pelisalacarta.mimediacenter.info/personalchannel/samplefeed.rss"/>
+        <setting id="personalchannelpage5" type="text" label="30047" enable="eq(-4,true)" default="100"/>
+
+        <!--setting id="subtitulo" type="bool" label="30021" default="false"/>
+        <setting id="subtitle_type" type="enum" lvalues="30432|30434|30433" label ="30431" enable ="eq(-1,true)" default="0"/>
+        <setting id="subtitlepath_folder" type="folder" source="" enable = "eq(-1,0)+eq(-2,true)" label="30435" default=""/>
+        <setting id="subtitlepath_file" type="file" source="" enable = "eq(-2,2)+eq(-3,true)" label="30436" default=""/>
+        <setting id="subtitlepath_keyboard" type="text" enable ="eq(-3,1)+eq(-4,true)" label="30437" default=""/-->
+
+        <setting type="sep"/>
+        <setting id="downloadpath" type="text" label="30017" default=""/>
+        <setting id="downloadlistpath" type="text" label="30018" default=""/>
+        <setting id="bookmarkpath" type="text" source="video" option="writeable" label="30030" default=""/>
+        <setting id="librarypath" type="text" label="30067" default=""/>
+
+        <!--<setting type="sep" />-->
+        <setting label="Biblioteca" type="lsep"/>
+        <setting id="updatelibrary" type="bool" label="30201" default="false"/>
+        <setting id="updatelibrary_wait" type="enum" label="Esperar en el inicio antes de actualizar" values="Nada|10 seg|20 seg|30 seg|60 seg" default="0" enable="eq(-1,true)"/>
+        <setting id="library_mode" type="enum" values="Servidor|Cliente" label="Modo" default="0"/>
+        <setting id="xbmc_host" type="text" label="Nombre Servidor" enable="eq(-1,1)" default=""/>
+        <setting id="xbmc_port" type="number" label="Puerto Servidor" enable="eq(-2,1)" default="0"/>
+        <setting id="mark_as_watched" type="bool" label="Marcar automáticamente como visto" default="false"/>
+        <setting id="watched_setting" type="enum" values="5 Min|30%|50%|80%|0 seg" label="Tiempo necesario del video" default="3" enable="eq(-1,true)"/>
+        <setting id="show_all_seasons" type="bool" label="Mostrar la opción &quot;Todos las temporadas&quot;" default="true"/>
+        <setting id="no_pile_on_seasons" type="select" label="No apilar temporadas de series" values="Nunca|Sólo si hay una temporada|Siempre" default="Sólo si hay una temporada"/>
+        <setting id="ask_channel" type="bool" label="Mostrar cuadro de selección de canales " default="false"/>
+        <setting type="sep"/>
+        <setting label="Filtros" type="lsep"/>
+        <setting id="filter_servers" type="bool" label="30068" default="false"/>
+        <!--<setting type="sep" />-->
+        <setting label="30071" type="lsep"/>
+        <!--<setting label="La 'lista blanca' sólo muestra los enlaces con los servidores que se indiquen, por ejemplo: 'streamcloud, streaminto'" type="lsep"/>-->
+        <setting id="whitelist" type="text" label="30069" enable="eq(-2,true)" default=""/>
+        <!--<setting label="La 'lista blanca' sólo muestra los enlaces con los servidores que se indiquen, por ejemplo: 'streamcloud, streaminto'" type="lsep"/>-->
+        <setting id="blacklist" type="text" label="30070" enable="eq(-3,true)" default=""/>
+
+</settings>

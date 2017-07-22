@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pepecine</id>
+	<name>Pepecine</name>
+	
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+	
+	<fanart>https://d12.usercdn.com/i/02278/u875vjx9c0xs.png</fanart>
+	<thumbnail>https://d12.usercdn.com/i/02278/nwm6todp6yyk.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pepecine.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>8</version>
+
+	<changes>
+		<change>
+			<date>26/06/17</date>
+			<autor></autor>
+			<description>Desactivacion temporal del canal por cambios en web</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>31/01/17</date>
+			<autor></autor>
+			<description>Solucionado bug al añadir contenido a la biblioteca</description>
+		</change>
+		<change>
+			<date>26/01/17</date>
+			<autor></autor>
+			<description>Fix por cambios en la web</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change> 
+			<date>26/05/16</date>
+			<autor></autor>
+			<description>Corregir bug al añadir serie a la biblioteca desde el listado de episodios</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+	
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_series</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Episodios de series</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

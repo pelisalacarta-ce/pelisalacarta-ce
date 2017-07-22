@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>aquitorrent</id>
+	<name>Aquitorrent</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+	
+	
+	<fanart></fanart>
+	<thumbnail>http://s6.postimg.org/kta7oe8y9/aquitorrentlogo.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/aquitorrent.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>6</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>13/12/2016</date>
+			<autor></autor>
+			<description>Actualización,correción y adaptacion infoplus.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>torrent</category>
+		<category>movie</category>
+		<category>serie</category>
+		<category>documentary</category>
+		<category>anime</category>
+		<category>vos</category>
+	</categories>
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+</channel>

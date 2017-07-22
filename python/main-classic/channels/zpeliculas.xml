@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>zpeliculas</id>
+	<name>Zpeliculas</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/zpeliculas.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/zpeliculas.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change> 
+			<date>29/04/16</date>
+			<autor></autor>
+			<description>Adaptar a Buscador global y Novedades Peliculas e Infantiles</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>movie</category>
+	</categories>
+	
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

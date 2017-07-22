@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>seriesyonkis</id>
+	<name>Seriesyonkis</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/seriesyonkis.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/seriesyonkis.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>30</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>11/07/2016</date>
+			<autor></autor>
+			<description>Reparada búsqueda y soluciona error en findvideos</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>serie</category>
+		<category>anime</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

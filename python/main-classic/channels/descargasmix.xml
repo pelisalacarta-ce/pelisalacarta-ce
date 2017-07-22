@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>descargasmix</id>
+	<name>DescargasMIX</name>
+	<language>es</language>
+	<update_url></update_url>
+	<active>true</active>
+		
+	<version>10</version>
+	<adult>false</adult>
+
+	<changes>
+		<change>
+			<date>06/05/17</date>
+			<autor></autor>
+			<description>Cambio de dominio</description>
+		</change>
+		<change>
+			<date>17/04/17</date>
+			<autor></autor>
+			<description>Mejorado en la deteccion del dominio para futuros cambios</description>
+		</change>
+		<change>
+			<date>09/04/17</date>
+			<autor></autor>
+			<description>Arreglado por cambios en la página</description>
+		</change>
+		<change>
+			<date>27/01/17</date>
+			<autor></autor>
+			<description>Sección online en películas modificada</description>
+		</change>
+		<change>
+			<date>08/07/16</date>
+			<autor></autor>
+			<description>Adaptado el canal a las nuevas funciones</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/descargasmix.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/descargasmix.png</bannermenu>
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+		<category>vos</category>
+		<category>torrent</category>
+		<category>documentary</category>
+		<category>anime</category>
+		<category>serie</category>
+	</categories>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

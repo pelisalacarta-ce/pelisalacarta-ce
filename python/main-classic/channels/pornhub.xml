@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pornhub</id>
+	<name>PornHub</name>
+
+	<active>true</active>
+	<adult>true</adult>
+	<language>es</language>
+	
+	<fanart>http://i.imgur.com/PwFvoss.jpg</fanart>
+	<thumbnail>http://s22.postimg.org/5lzcocfqp/pornhub_logo.jpg</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pornhub.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>7</version>
+	<changes>
+		<change>
+			<date>29/04/2017</date>
+			<autor></autor>
+			<description>Reparados enlaces a los vídeos</description>
+		</change>
+		<change>
+			<date>14/09/2016</date>
+			<autor></autor>
+			<description>Cambios en la web</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+  <settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

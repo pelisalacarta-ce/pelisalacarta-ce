@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>25/03/2016</date>
+			<description>Versión incial</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>turbovideos.net/embed-([a-z0-9A-Z]+)</pattern>
+			<url>http://turbovideos.net/embed-\1.html</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>turbovideos</id>
+	<name>turbovideos</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_turbovideos.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>2</version>
+</server>

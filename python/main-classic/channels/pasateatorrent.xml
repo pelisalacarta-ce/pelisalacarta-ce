@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pasateatorrent</id>
+	<name>PasateaTorrent</name>
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+    
+    <fanart></fanart>
+    <thumbnail>http://imgur.com/iLeISt0.png</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pasateatorrent.png</bannermenu>
+    <update_url></update_url>
+    
+    <version>4</version>
+    <changes>
+        <change>
+          <date>06/12/2016</date>
+          <autor></autor>
+         <description>Release</description>
+        </change>
+        <change>
+          <date>13/01/2017</date>
+          <autor></autor>
+          <description>Arreglo sagas en peliculas que no se mostraban.Mejoras en series/info-capitulos</description>
+        </change>
+        <change>
+          <date>04/04/2017</date>
+          <autor></autor>
+          <description>Migración httptools.Adaptación proxy según Kodi sea igual o menor v.17.Pequeñas mejoras código</description>
+        </change>
+        <change>
+          <date>28/06/2017</date>
+          <autor></autor>
+          <description>Correciones código y algunas mejoras</description>
+        </change>
+    </changes>
+    
+    <categories>
+        <category>torrent</category>
+        <category>movie</category>
+        <category>serie</category>
+    </categories>
+    
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+    
+</channel>

@@ -1,0 +1,35 @@
+﻿<?xml version="0.1" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>anitoonstv</id>
+	<name>AniToons TV</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/9Zu5NBc.png</thumbnail>
+	<bannermenu>http://i.imgur.com/JQSXCaB.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	
+    <changes>
+		<change>
+			<date>13/06/2017</date>
+			<autor></autor>
+			<description>Arreglado problema en nombre de servidores</description>
+		</change>
+		<change>
+			<date>02/06/2017</date>
+			<autor></autor>
+			<description>Primera Versión</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>serie</category>
+		<category>latino</category>
+	</categories>
+
+</channel>

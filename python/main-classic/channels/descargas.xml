@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>descargas</id>
+	<name>Descargas</name>
+
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/descargas.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/descargas.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>12/03/17</date>
+			<autor></autor>
+			<description>Añadidas mas opciones de configuracion y corregidos fallos</description>
+		</change>
+		<change>
+			<date>12/01/17</date>
+			<autor></autor>
+			<description></description>
+		</change>
+	</changes>
+
+
+	<categories>
+		<category>movie</category>
+	</categories>
+	<settings>
+		<type>label</type>
+		<label>Ubicacion de archivos</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>library_add</id>
+		<type>bool</type>
+		<label>  - Añadir descargas completadas a la biblioteca</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>library_move</id>
+		<type>bool</type>
+		<label>  - Mover el archivo descargado a la biblioteca</label>
+		<default>true</default>
+		<enabled>eq(-1,true)</enabled>
+		<visible>true</visible>
+	</settings>
+  <settings>
+		<id>browser</id>
+		<type>bool</type>
+		<label>  - Visualizar archivos descargados desde descargas</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<type>label</type>
+		<label>Descarga</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>block_size</id>
+		<type>list</type>
+		<label>  - Tamaño por bloque</label>
+		<lvalues>128 KB</lvalues>
+		<lvalues>256 KB</lvalues>
+		<lvalues>512 KB</lvalues>
+		<lvalues>1 MB</lvalues>
+		<lvalues>2 MB</lvalues>
+		<default>1</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>part_size</id>
+		<type>list</type>
+		<label>  - Tamaño por parte</label>
+		<lvalues>1 MB</lvalues>
+		<lvalues>2 MB</lvalues>
+		<lvalues>4 MB</lvalues>
+		<lvalues>8 MB</lvalues>
+		<lvalues>16 MB</lvalues>
+		<lvalues>32 MB</lvalues>
+		<default>1</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>max_connections</id>
+		<type>list</type>
+		<label>  - Numero máximo de conexiones simultaneas</label>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<lvalues>6</lvalues>
+		<lvalues>7</lvalues>
+		<lvalues>8</lvalues>
+		<lvalues>9</lvalues>
+		<lvalues>10</lvalues>
+		<default>4</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>max_buffer</id>
+		<type>list</type>
+		<label>  - Numero máximo de partes en memoria</label>
+		<lvalues>0</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>6</lvalues>
+		<lvalues>8</lvalues>
+		<lvalues>10</lvalues>
+		<lvalues>12</lvalues>
+		<lvalues>14</lvalues>
+		<lvalues>16</lvalues>
+		<lvalues>18</lvalues>
+		<lvalues>20</lvalues>
+		<default>5</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<type>label</type>
+		<label>Elección del servidor</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>server_reorder</id>
+		<type>list</type>
+		<label>  - Orden de servidores</label>
+		<lvalues>Mantener</lvalues>
+		<lvalues>Reordenar</lvalues>
+		<default>1</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>language</id>
+		<type>list</type>
+		<label>  - Idioma preferido</label>
+		<lvalues>Esp, Lat, Sub, Eng, Vose</lvalues>
+		<lvalues>Esp, Sub, Lat, Eng, Vose</lvalues>
+		<lvalues>Eng, Sub, Vose, Esp, Lat</lvalues>
+		<lvalues>Vose, Eng, Sub, Esp, Lat</lvalues>
+		<default>0</default>
+		<enabled>eq(-1,'Reordenar')</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>quality</id>
+		<type>list</type>
+		<label>  - Calidad preferida</label>
+		<lvalues>La mas alta</lvalues>
+		<lvalues>HD 1080</lvalues>
+		<lvalues>HD 720</lvalues>
+		<lvalues>SD</lvalues>
+		<default>0</default>
+		<enabled>eq(-2,'Reordenar')</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>server_speed</id>
+		<type>bool</type>
+		<label>  - Elegir los servidores mas rapidos</label>
+		<default>true</default>
+		<enabled>eq(-3,'Reordenar')</enabled>
+		<visible>true</visible>
+	</settings>
+
+</channel>

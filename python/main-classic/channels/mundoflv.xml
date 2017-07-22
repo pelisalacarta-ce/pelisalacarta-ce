@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>mundoflv</id>
+	<name>MundoFlv</name>
+
+	<compatible>
+		<addon_version>4.3</addon_version>
+	</compatible>
+
+    <active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s32.postimg.org/h1ewz9hhx/mundoflv.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/mundoflv.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>14</version>
+
+	<changes>
+		<change>
+         <date>24/06/2017</date>
+         <autor></autor>
+         <description>Cambios para autoplay</description>
+        </change>
+		<change>
+				<date>06/06/2017</date>
+				<autor></autor>
+				<description>Compatibilidad con AutoPlay</description>
+	   	</change>
+		<change>
+				<date>03/06/2017</date>
+				<autor></autor>
+				<description>Reparado por mala subida</description>
+	   	</change>
+		<change>
+				<date>25/05/2017</date>
+				<autor></autor>
+				<description>cambios esteticos</description>
+	   	</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>28/01/2017</date>
+			<autor></autor>
+			<description>Release.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>latino</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+
+	<settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>VOS</lvalues>
+		<lvalues>VOSE</lvalues>
+		<lvalues>VO</lvalues>
+	</settings>
+	
+</channel>

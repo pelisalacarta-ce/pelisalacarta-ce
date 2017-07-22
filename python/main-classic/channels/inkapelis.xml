@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>inkapelis</id>
+	<name>Inkapelis</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<changes>
+		<change>
+			<date>12/03/2017</date>
+			<autor></autor>
+			<description>Reparados enlaces directos</description>
+		</change>
+		<change>
+			<date>27/02/2017</date>
+			<autor></autor>
+			<description>Añadidos enlaces directos y adaptado al uso de httptools</description>
+		</change>
+		<change>
+			<date>16/01/2016</date>
+			<autor></autor>
+			<description>Corregido por cambios en el enmascaramiento de enlaces</description>
+		</change>
+	</changes>
+	<version>4</version>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/I7MxHZI.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/inkapelis.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>vos</category>
+		<category>latino</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+	<settings>
+		<id>filtro_defecto_peliculas</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas1</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas2</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas3</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+</channel>

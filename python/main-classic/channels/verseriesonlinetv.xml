@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>verseriesonlinetv</id>
+	<name>Veriesonlinetv</name>
+    <active>true</active>
+    <adult>false</adult>
+    <language>es</language>
+    
+    <version>6</version>
+    <changes>
+         
+            <change>
+                    <date>17/12/2016</date>
+			        <autor></autor>
+                    <description>Mejora código y adaptación Infoplus</description>
+            </change>        
+            <change> 
+                    <date>04/04/2017</date>
+			        <autor></autor>
+                    <description>Migración a Httptools</description>
+            </change>
+            <change>
+                    <date>28/06/2017</date>
+                    <autor></autor>
+                   <description>Corrección código y algunas mejoras</description>
+            </change>
+    </changes>
+    
+    
+    <fanart></fanart>
+    <thumbnail>http://s6.postimg.org/gl0ok4t01/verserieslogo.png</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/verseriesonlinetv.png</bannermenu>
+    
+    <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    
+    <categories>
+        <category>serie</category>
+        <category>vos</category>
+    </categories>
+    
+    <settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>biblioteca</id>
+	<name>Biblioteca</name>
+
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<bannermenu></bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>4</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change>
+			<date>30/04/2016</date>
+			<autor></autor>
+			<description>Version inicial</description>
+		</change>
+	</changes>
+
+	<settings>
+		<id>updatelibrary</id>
+		<type>list</type>
+		<label>Actualizar la biblioteca</label>
+		<default>1</default>
+		<visible>true</visible>
+		<lvalues>Nunca</lvalues>
+		<lvalues>Al iniciar Kodi</lvalues>
+		<lvalues>Una sola vez al día</lvalues>
+		<lvalues>Al iniciar Kodi y al menos una vez al día</lvalues>
+	</settings>
+	<settings>
+		<id>updatelibrary_wait</id>
+		<type>list</type>
+		<label>    Esperar antes de actualizar al iniciar kodi</label>
+		<default>0</default>
+		<visible>true</visible>
+		<enabled>eq(-1,Al iniciar Kodi)|eq(-1,Al iniciar Kodi y al menos una vez al día)</enabled>
+		<lvalues>No</lvalues>
+		<lvalues>10 seg</lvalues>
+		<lvalues>20 seg</lvalues>
+		<lvalues>30 seg</lvalues>
+		<lvalues>60 seg</lvalues>
+	</settings>
+	<settings>
+		<id>everyday_delay</id>
+		<type>list</type>
+		<label>    Iniciar actualización programada a partir de las</label>
+		<default>1</default>
+		<visible>true</visible>
+		<enabled>eq(-2,Una sola vez al día)|eq(-2,Al iniciar Kodi y al menos una vez al día)</enabled>
+		<lvalues>00:00</lvalues>
+		<lvalues>04:00</lvalues>
+		<lvalues>08:00</lvalues>
+		<lvalues>12:00</lvalues>
+	</settings>
+	<settings>
+		<id>updatetvshows_interval</id>
+		<type>list</type>
+		<label>    Buscar nuevos episodios en las series activas</label>
+		<default>0</default>
+		<visible>true</visible>
+		<enabled>!eq(-3,Nunca)</enabled>
+		<lvalues>Siempre</lvalues>
+		<lvalues>Según su emisión</lvalues>
+	</settings>
+	<settings>
+		<id>search_new_content</id>
+		<type>list</type>
+		<label>    Realizar búsqueda de contenido en</label>
+		<default>0</default>
+		<enabled>!eq(-4,Nunca)</enabled>
+		<lvalues>La carpeta de cada serie</lvalues>
+		<lvalues>Toda la biblioteca</lvalues>
+	</settings>
+	<settings>
+		<id>window_type</id>
+		<type>list</type>
+		<label>Mostrar los enlaces en</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Ventana convencional</lvalues>
+		<lvalues>Ventana emergente</lvalues>
+	</settings>
+	<settings>
+		<id>max_links</id>
+		<type>list</type>
+		<label>    Numero máximo de enlaces a mostrar (recomendable para equipos lentos)</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Todos</lvalues>
+		<lvalues>30</lvalues>
+		<lvalues>60</lvalues>
+		<lvalues>90</lvalues>
+		<lvalues>120</lvalues>
+		<lvalues>150</lvalues>
+		<lvalues>180</lvalues>
+		<lvalues>210</lvalues>
+	</settings>
+	<settings>
+		<id>white_list_order</id>
+		<type>bool</type>
+		<label>    Ordenar segun el orden de la lista blanca</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default>false</default>
+	</settings>
+	<settings>
+		<id>quit_channel_name</id>
+		<type>bool</type>
+		<label>    Quitar el nombre del canal del principio</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default>false</default>
+	</settings>
+	<settings>
+		<id>replace_VD</id>
+		<type>bool</type>
+		<label>    Ventana emergente: Reemplazar "Ver en" por "[V]" y "Descargar en" por "[D]"</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default>false</default>
+	</settings>
+
+
+	<settings>
+		<id>library_mode</id>
+		<type>list</type>
+		<label>Ubicación de Base de datos</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Local</lvalues>
+		<lvalues>Remota</lvalues>
+	</settings>
+	<settings>
+		<id>xbmc_host</id>
+		<type>text</type>
+		<label>    Nombre Servidor</label>
+		<visible>true</visible>
+		<enabled>eq(-1,Remota)</enabled>
+		<default></default>
+	</settings>
+	<settings>
+		<id>xbmc_puerto</id>
+		<type>text</type>
+		<label>    Puerto Servidor</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>mark_as_watched</id>
+		<type>bool</type>
+		<label>Marcar automáticamente como visto</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>watched_setting</id>
+		<type>list</type>
+		<label>    Tiempo necesario del video</label>
+		<default>3</default>
+		<visible>true</visible>
+		<enabled>eq(-1,true)</enabled>
+		<lvalues>5 min</lvalues>
+		<lvalues>30%</lvalues>
+		<lvalues>50%</lvalues>
+		<lvalues>80%</lvalues>
+		<lvalues>0 seg</lvalues>
+	</settings>
+	<settings>
+		<id>sync_trakt</id>
+		<type>label</type>
+		<label>Sincronización con Trakt</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>sync_trakt_watched</id>
+		<type>bool</type>
+		<label>    Tras marcar como visto el episodio</label>
+		<default>false</default>
+		<visible>true</visible>
+		<enabled>eq(-3,true)</enabled>
+	</settings>
+	<settings>
+		<id>sync_trakt_notification</id>
+		<type>bool</type>
+		<label>        Mostrar notificación</label>
+		<default>true</default>
+		<visible>true</visible>
+		<enabled>eq(-1,true)</enabled>
+	</settings>
+	<settings>
+		<id>sync_trakt_new_tvshow</id>
+		<type>bool</type>
+		<label>    Al añadir una serie a la biblioteca</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>sync_trakt_new_tvshow_wait</id>
+		<type>bool</type>
+		<label>        Esperar a que se añada la serie a la biblioteca</label>
+		<default>true</default>
+		<visible>true</visible>
+		<enabled>eq(-1,true)</enabled>
+	</settings>
+
+	<settings>
+		<id>show_all_seasons</id>
+		<type>bool</type>
+		<label>Mostrar la opción "Todas las temporadas"</label>
+		<default>true</default>
+	</settings>
+	<settings>
+		<id>no_pile_on_seasons</id>
+		<type>list</type>
+		<label>No apilar temporadas de series</label>
+		<default>1</default>
+		<lvalues>Nunca</lvalues>
+		<lvalues>Sólo si hay una temporada</lvalues>
+		<lvalues>Siempre</lvalues>
+	</settings>
+	<settings>
+		<id>ask_channel</id>
+		<type>bool</type>
+		<label>Mostrar cuadro de selección de canales</label>
+		<default>false</default>
+	</settings>
+	<settings>
+		<id>original_title_folder</id>
+		<type>list</type>
+		<label>Crear directorios en el sistema usando</label>
+		<default>0</default>
+		<lvalues>Título localizado</lvalues>
+		<lvalues>Título original</lvalues>
+	</settings>
+	<settings>
+		<id>lab_1</id>
+		<type>label</type>
+		<label>Al añadir contenido, obtener información de:</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+    <settings>
+		<id>scraper_movies</id>
+		<type>list</type>
+		<label>    Peliculas:</label>
+        <enabled>false</enabled>
+		<default>0</default>
+		<lvalues>TheMovieDB.org</lvalues>
+        <lvalues>None</lvalues>
+	</settings>
+    <settings>
+		<id>scraper_tvshows</id>
+		<type>list</type>
+		<label>    Series:</label>
+		<default>0</default>
+		<lvalues>TheMovieDB.org</lvalues>
+        <lvalues>TheTvDB.com</lvalues>
+	</settings>
+	<settings>
+		<id>tvdb_retry_eng</id>
+		<type>bool</type>
+		<label>        Si no hay resultados buscar también en Inglés</label>
+		<default>true</default>
+		<enabled>eq(-1,TheTvDB.com)</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>12/05/2017</date>
+			<description>Corregido por cambios en el servidor</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>07/02/2017</date>
+			<description>Corregido por cambios en el servidor y adaptado al uso de httptools</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>11/01/2017</date>
+			<description>Reparado por cambios en el servidor</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>(?:openload|oload).../(?:embed|f)/([0-9a-zA-Z-_]+)</pattern>
+			<url>https://openload.co/embed/\1/</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>openload</id>
+	<name>openload</name>
+	<premium>
+		<value>realdebrid</value>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_openload.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>12</version>
+</server>

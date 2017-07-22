@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--- By EpNiebla -->
+<channel>
+	<id>allcalidad</id>
+	<name>Allcalidad</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s22.postimg.org/irnlwuizh/allcalidad1.png</thumbnail>
+	<bannermenu>https://s22.postimg.org/9y1athlep/allcalidad2.png</bannermenu>
+	
+	<update_url>1</update_url>
+	<version>1</version>
+	<changes>
+            <change>
+                    <date>14/07/2017</date>
+			        <autor></autor>
+                    <description>Primera version</description>
+            </change>        
+	</changes>
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+   <settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

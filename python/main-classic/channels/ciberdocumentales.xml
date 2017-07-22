@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+   <id>ciberdocumentales</id>
+   <name>CiberDocumentales</name>
+
+   <active>true</active>
+   <adult>false</adult>
+   <language>es</language>
+
+   <fanart></fanart>
+   <thumbnail>https://s9.postimg.org/secdb5s8v/ciberdocumentales.png</thumbnail>
+   <bannermenu>https://s1.postimg.org/sa486z0of/ciberdocumentales_banner.png</bannermenu>
+
+   <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+   <version>4</version>
+   <date>18/06/2016</date>
+   <changes>First release</changes>
+
+   <categories>
+      <category>documentary</category>
+   </categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+   <settings>
+      <id>include_in_newest_documentales</id>
+      <type>bool</type>
+      <label>Incluir en Novedades - Documentales</label>
+      <default>true</default>
+      <enabled>true</enabled>
+      <visible>true</visible>
+   </settings>
+</channel>

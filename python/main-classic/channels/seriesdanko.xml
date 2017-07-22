@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>seriesdanko</id>
+	<name>Seriesdanko</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/seriesdanko.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/seriesdanko.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>9</version>
+
+	<changes>
+		<change>
+			<date>06/04/2017</date>
+			<autor></autor>
+			<description>Mejoras en filtertools</description>
+		</change>
+		<change>
+			<date>27/01/2017</date>
+			<autor></autor>
+			<description>Fix añadir serie desde la búsqueda..</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>serie</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+
+	<settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>VO</lvalues>
+		<lvalues>VOS</lvalues>
+	</settings>
+
+</channel>

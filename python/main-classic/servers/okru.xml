@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>22/06/2017</date>
+			<description>Actualizado mensaje de archivo borrado</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>09/05/2017</date>
+			<description>Corregido, ha cambiado la web desde la que extraer los enlaces</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>28/01/2017</date>
+			<description>Mejorada detección de enlaces caídos, adaptado a los últimos cambios</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>07/09/2015</date>
+			<description>Version inicial</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>//(?:www.)?ok.../(?:videoembed|video)/(\d+)</pattern>
+			<url>http://ok.ru/videoembed/\1</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>okru</id>
+	<name>okru</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_okru.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>5</version>
+</server>

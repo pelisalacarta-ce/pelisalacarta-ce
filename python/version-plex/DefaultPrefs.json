@@ -1,0 +1,82 @@
+[
+  {
+    "id": "adult_aux_intro_password",
+    "label": "Contraseña para adultos",
+    "type": "text",
+    "option": "hidden",
+    "default": "",
+    "secure": "true"
+  },
+  {
+  "id": "adult_mode",
+  "label": "Mostrar canales para adultos",
+  "type": "enum",
+  "values": ["Nunca","Siempre","Solo hasta que se reinicie Plex Media Server"],
+  "default": "Nunca"
+  },
+  {
+    "id": "adult_aux_new_password1",
+    "label": "Nueva contraseña",
+    "type": "text",
+    "option": "hidden",
+    "default": "",
+    "secure": "true"
+  },
+  {
+    "id": "adult_aux_new_password2",
+    "label": "Confirmar nueva contraseña",
+    "type": "text",
+    "option": "hidden",
+    "default": "",
+    "secure": "true"
+  },
+  {
+	"id": "resolve_priority",
+	"type": "enum",
+	"label": "Método prioritario",
+	"values": ["Free primero", "Premium primero", "Debriders primero"],
+	"default": 0
+  },
+  {
+    "id": "hidepremium",
+    "label": "Ocultar servidores de pago sin cuenta",
+    "type": "bool",
+    "default": "false"
+  },
+  {
+    "id": "resolve_stop",
+    "label": "Dejar de buscar cuando encuentre una opción",
+    "type": "bool",
+    "default": "true"
+  },
+  {
+    "id": "server_stats",
+    "label": "Enviar estadisticas sobre el uso de servidores",
+    "type": "bool",
+    "default": "true"
+  },
+  {
+    "id": "personalchannel",
+    "label": "Canal personal",
+    "type": "bool",
+    "default": "false"
+  },
+  {
+    "id": "personalchannelname",
+    "label": "Nombre del canal",
+    "type": "text",
+    "default": "Ejemplo de canal personal"
+  },
+  {
+    "id": "personalchannellogo",
+    "label": "Logotipo del canal",
+    "type": "text",
+    "default": "http:\/\/pelisalacarta.mimediacenter.info\/personalchannel\/sample.png"
+  },
+  {
+    "id": "personalchannelurl",
+    "label": "URL del canal",
+    "type": "text",
+    "default": "http:\/\/pelisalacarta.mimediacenter.info\/personalchannel\/samplefeed.rss"
+  }
+]

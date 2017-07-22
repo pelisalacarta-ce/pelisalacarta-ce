@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelisplus</id>
+	<name>PelisPlus</name>
+
+	<compatible>
+		<addon_version>4.3</addon_version>
+	</compatible>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s13.postimg.org/z5dbzfasn/pelisplus.png</thumbnail>
+	<bannermenu>https://s16.postimg.org/p9xz2vlo5/pelisplus_banner.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>9</version>
+	<changes>
+		<change>
+         <date>24/06/2017</date>
+         <autor></autor>
+         <description>Cambios para autoplay</description>
+        </change>
+		<change>
+			<date>06/06/2017</date>
+			<autor></autor>
+			<description>compatibilidad con AutoPlay</description>
+		</change>
+		<change>
+			<date>03/06/2017</date>
+			<autor></autor>
+			<description>Reparado por falla del canal</description>
+		</change>
+		<change>
+				<date>25/05/2017</date>
+				<autor></autor>
+				<description>cambios esteticos</description>
+	   	</change>
+		<change>
+			<date>02/05/2017</date>
+			<autor></autor>
+			<description>fix findvideos</description>
+		</change>
+	</changes>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>06/12/2016</date>
+			<autor></autor>
+			<description>Release.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+		<category>serie</category>
+		<category>documentary</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+	
+	<settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Latino</lvalues>
+	</settings>
+	
+</channel>

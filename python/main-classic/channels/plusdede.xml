@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>plusdede</id>
+	<name>Plusdede</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/media/pelisalacarta/squares/plusdede.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/media/pelisalacarta/bannermenu/plusdede.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>1</version>
+	<changes>
+		<change>
+			<date>12/07/2017</date>
+			<autor></autor>
+		</change>
+		
+	</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>plusdedeuser</id>
+		<type>text</type>
+		<label>@30014</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>plusdedepassword</id>
+		<type>text</type>
+		<hidden>true</hidden>
+		<label>@30015</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>!eq(-1,'') + !eq(-2,'')</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>plusdedesortlinks</id>
+		<type>list</type>
+		<label>Ordenar enlaces</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>!eq(-2,'') + !eq(-3,'')</visible>
+		<lvalues>No</lvalues>
+		<lvalues>Por no Reportes</lvalues>
+		<lvalues>Por Idioma</lvalues>
+		<lvalues>Por Calidad</lvalues>
+		<lvalues>Por Idioma y Calidad</lvalues>
+		<lvalues>Por Idioma y no Reportes</lvalues>
+		<lvalues>Por Idioma, Calidad y no Reportes</lvalues>
+	</settings>
+	<settings>
+		<id>plusdedeshowlinks</id>
+		<type>list</type>
+		<label>Mostrar enlaces</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>!eq(-3,'') + !eq(-4,'')</visible>
+		<lvalues>Todos</lvalues>
+		<lvalues>Ver online</lvalues>
+		<lvalues>Descargar</lvalues>
+	</settings>
+	<settings>
+		<id>plusdedenumberlinks</id>
+		<type>list</type>
+		<label>Limitar número de enlaces</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>!eq(-4,'') + !eq(-5,'')</visible>
+		<lvalues>No</lvalues>
+		<lvalues>5</lvalues>
+		<lvalues>10</lvalues>
+		<lvalues>15</lvalues>
+		<lvalues>20</lvalues>
+		<lvalues>25</lvalues>
+		<lvalues>30</lvalues>
+	</settings>
+</channel>

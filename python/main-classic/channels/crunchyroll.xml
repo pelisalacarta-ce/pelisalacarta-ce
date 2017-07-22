@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>crunchyroll</id>
+	<name>Crunchyroll</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>false</adult>
+
+	<version>1</version>
+
+	<changes>
+		<change>
+			<date>16/05/2017</date>
+			<autor></autor>
+			<description>Primera versión</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/O49fDS1.png</thumbnail>
+	<bannermenu></bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>anime</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>crunchyrolluser</id>
+		<type>text</type>
+		<color>0xFF25AA48</color>
+		<label>@30014</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>crunchyrollpassword</id>
+		<type>text</type>
+		<color>0xFF25AA48</color>
+		<hidden>true</hidden>
+		<label>@30015</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>crunchyrollidioma</id>
+		<type>list</type>
+		<label>Idioma de los textos de la web</label>
+		<default>6</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Alemán</lvalues>
+		<lvalues>Portugués</lvalues>
+		<lvalues>Francés</lvalues>
+		<lvalues>Italiano</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Español Latino</lvalues>
+		<lvalues>Español España</lvalues>
+	</settings>
+	<settings>
+		<id>crunchyrollsub</id>
+		<type>list</type>
+		<label>Idioma de subtítulos preferido en Crunchyroll</label>
+		<default>6</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Alemán</lvalues>
+		<lvalues>Portugués</lvalues>
+		<lvalues>Francés</lvalues>
+		<lvalues>Italiano</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Español Latino</lvalues>
+		<lvalues>Español España</lvalues>
+	</settings>
+	<settings>
+		<id>proxy_usa</id>
+		<type>bool</type>
+		<label>Usar proxy para ver el catálogo de USA</label>
+		<default>false</default>
+		<visible>true</visible>
+		<enabled>!eq(+1,true)</enabled>
+	</settings>
+	<settings>
+		<id>proxy_spain</id>
+		<type>bool</type>
+		<label>Usar proxy para ver el catálogo de España</label>
+		<default>false</default>
+		<visible>true</visible>
+		<enabled>!eq(-1,true)</enabled>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Sin color</lvalues>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

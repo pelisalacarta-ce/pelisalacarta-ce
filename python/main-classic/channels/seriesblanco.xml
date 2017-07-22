@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>seriesblanco</id>
+	<name>Seriesblanco</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/seriesblanco.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/seriesblanco.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/develop/python/main-classic/channels/</update_url>
+	<version>19</version>
+	<changes>
+		<change>
+			<date>11/05/2017</date>
+			<autor></autor>
+			<description>Fix merge</description>
+		</change>
+		<change>
+			<date>06/04/2017</date>
+			<autor></autor>
+			<description>Mejoras en filtertools, fix calidades</description>
+		</change>
+		<change>
+			<date>01/04/2017</date>
+			<autor></autor>
+			<description>Cambiado canal.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>serie</category>
+		<category>vos</category>
+		<category>latino</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_series</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Episodios de series</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+
+	<settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>VO</lvalues>
+		<lvalues>VOS</lvalues>
+		<lvalues>VOSI</lvalues>
+		<lvalues>OVOS</lvalues>
+	</settings>
+	<settings>
+		<id>filterlinks</id>
+		<type>list</type>
+		<label>Mostrar enlaces de tipo...</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Solo Descarga</lvalues>
+		<lvalues>Solo Online</lvalues>
+		<lvalues>No filtrar</lvalues>
+	</settings>
+</channel>

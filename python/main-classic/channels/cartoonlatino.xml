@@ -1,0 +1,30 @@
+﻿<?xml version="0.1" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>cartoonlatino</id>
+	<name>Cartoon-Latino</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/wk6fRDZ.png</thumbnail>
+	<bannermenu>http://i.imgur.com/115c59F.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	
+    <changes>
+		<change>
+			<date>07/06/2017</date>
+			<autor></autor>
+			<description>Primera version del canal</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>serie</category>
+                <category>latino</category>
+	</categories>
+
+</channel>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>animeflv</id>
+	<name>AnimeFLV</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/animeflv.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/animeflv.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>13</version>
+	
+    <changes>
+		<change>
+			<date>18/05/2017</date>
+			<autor></autor>
+			<description>fix ultimos animes, episodios</description>
+		</change>
+		<change>
+			<date>06/04/2017</date>
+			<autor></autor>
+			<description>fix ultimos episodios</description>
+		</change>
+		<change>
+			<date>01/03/2017</date>
+			<autor></autor>
+			<description>fix nueva web</description>
+		</change>
+		<change>
+			<date>09/07/2016</date>
+			<autor></autor>
+			<description>Arreglo viewmode</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>anime</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	
+	<settings>
+		<id>include_in_newest_anime</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Episodios de anime</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>tvvip</id>
+	<name>TV-VIP</name>
+	<language>es</language>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<active>false</active>
+
+	<adult>false</adult>
+	<version>7</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>04/01/2017</date>
+			<autor></autor>
+			<description>Se desactiva el canal hasta posible arreglo.</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/gNHVlI4.png</thumbnail>
+	<bannermenu>http://i.imgur.com/wyRk5AG.png</bannermenu>
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>documentary</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

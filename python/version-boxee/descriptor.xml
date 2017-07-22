@@ -1,0 +1,17 @@
+<app>
+  <id>info.mimediacenter.pelisalacarta</id>
+  <name>pelisalacarta</name>
+  <version>10.30</version>
+  <description>Películas y series a la carta</description>
+  <thumb>http://pelisalacarta.mimediacenter.info/icon.png</thumb>
+  <repositoryid>info.mimediacenter</repositoryid>
+  <repository>http://www.mimediacenter.info/boxee</repository>
+  <media>video</media>
+  <author>Jesús</author>
+  <copyright>blog.tvalacarta.info</copyright>
+  <email>tvalacarta@gmail.com</email>
+  <type>plugin</type>
+  <url></url>
+  <platform>all</platform>
+  <minversion>0.9.7</minversion>
+</app>

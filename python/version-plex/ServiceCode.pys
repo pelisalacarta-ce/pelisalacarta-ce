@@ -1,0 +1,35 @@
+def MetadataObjectForURL(url):
+	Log.Info("ServiceCode.MetadataObjectForURL(url="+url+")")
+
+	title = "El titulo"
+	summary = "El argumento"
+	thumb = "El thumbnail"
+
+	return VideoClipObject(
+		title = title,
+		summary = summary,
+		thumb = thumb
+	)
+
+def MediaObjectsForURL(url):
+	Log.Info("ServiceCode.MediaObjectsForURL(url="+url+")")
+
+	return [
+		MediaObject(
+			parts = [PartObject(key=Callback(PlayVideo, url=url))],
+			container = 'flv',
+			video_codec = VideoCodec.H264,
+			audio_codec = AudioCodec.AAC,
+		)
+	]
+
+####################################################################################################
+@indirect
+def PlayVideo(url):
+	Log.Info("ServiceCode.PlayVideo url="+url)
+
+	video_url = url.replace("pelisalacarta://","")
+	Log.Info("ServiceCode.PlayVideo video_url="+video_url)
+
+	return IndirectResponse(VideoClipObject, key=video_url)
+	#return Redirect(video_url)

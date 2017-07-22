@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>tvmoviedb</id>
+	<name>TvMovieDB</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/HA7fvgD.png</thumbnail>
+	<bannermenu></bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+
+	<changes>
+		<change>
+			<date>12/05/2017</date>
+			<autor></autor>
+			<description>Corregida sección myanimelist y cambios menores</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>04/01/2017</date>
+			<autor></autor>
+			<description>Primera version.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>anime</category>
+	</categories>
+
+	<settings>
+		<id>tmdb</id>
+		<type>list</type>
+		<label>Idioma de búsqueda en TMDB</label>
+		<default>7</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+		<lvalues>Alemán</lvalues>
+		<lvalues>Francés</lvalues>
+		<lvalues>Portugués</lvalues>
+		<lvalues>Italiano</lvalues>
+		<lvalues>Español Latino</lvalues>
+		<lvalues>Catalán</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Castellano</lvalues>
+ 	</settings>
+	<settings>
+		<id>tmdb_alternativo</id>
+		<type>list</type>
+		<label>Idioma alternativo para TMDB (No sinopsis idioma principal)</label>
+		<default>6</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+		<lvalues>Alemán</lvalues>
+		<lvalues>Francés</lvalues>
+		<lvalues>Portugués</lvalues>
+		<lvalues>Italiano</lvalues>
+		<lvalues>Español Latino</lvalues>
+		<lvalues>Catalán</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Castellano</lvalues>
+ 	</settings>
+	<settings>
+		<id>imdb</id>
+		<type>list</type>
+		<label>Idioma de los títulos en IMDB</label>
+		<color>0xFFE0F04B</color>
+		<default>7</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+		<lvalues>Alemán</lvalues>
+		<lvalues>Francés</lvalues>
+		<lvalues>Portugués</lvalues>
+		<lvalues>Italiano</lvalues>
+		<lvalues>Español Latino</lvalues>
+		<lvalues>Catalán</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Castellano</lvalues>
+ 	</settings>
+	<settings>
+		<id>label1</id>
+		<type>label</type>
+		<label></label>
+		<default>None</default>
+		<enabled>false</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>filmaff</id>
+		<type>list</type>
+		<label>Sitio Web Filmaffinity</label>
+		<color>0xFF25AA48</color>
+		<default>5</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+		<lvalues>Colombia</lvalues>
+		<lvalues>Chile</lvalues>
+		<lvalues>Argentina</lvalues>
+		<lvalues>México</lvalues>
+		<lvalues>US/UK</lvalues>
+		<lvalues>España</lvalues>
+ 	</settings>
+	<settings>
+		<id>usuariofa</id>
+		<type>text</type>
+		<label>Usuario Filmaffinity (Opcional)</label>
+		<color>0xFFd50b0b</color>
+		<default></default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>passfa</id>
+		<type>text</type>
+		<label>Contraseña Filmaffinity</label>
+		<color>0xFFd50b0b</color>
+		<default></default>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<hidden>True</hidden>
+	</settings>
+	<settings>
+		<id>orderfa</id>
+		<type>list</type>
+		<label>Ordenar listas personales de Filmaffinity por:</label>
+		<color>0xFF25AA48</color>
+		<default>0</default>
+ 		<enabled>!eq(-1,'')</enabled>
+ 		<visible>true</visible>
+		<lvalues>Posición</lvalues>
+		<lvalues>Título</lvalues>
+		<lvalues>Año</lvalues>
+		<lvalues>Voto</lvalues>
+		<lvalues>Nota media</lvalues>
+ 	</settings>
+	<settings>
+		<id>label2</id>
+		<type>label</type>
+		<label></label>
+		<default>None</default>
+		<enabled>false</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>usuariomal</id>
+		<type>text</type>
+		<label>Usuario MyAnimeList (Opcional)</label>
+		<color>0xFF25AA48</color>
+		<default></default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>passmal</id>
+		<type>text</type>
+		<label>Contraseña MyAnimeList</label>
+		<color>0xFF25AA48</color>
+		<default></default>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<hidden>True</hidden>
+	</settings>
+	<settings>
+		<id>adult_mal</id>
+		<type>bool</type>
+		<label>Mostrar Hentais en MyAnimeList</label>
+		<color>0xFFd50b0b</color>
+		<default>False</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+		<lvalues>Ninguno</lvalues>
+	</settings>
+</channel>

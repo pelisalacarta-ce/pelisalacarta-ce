@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>areadocumental</id>
+	<name>Area-Documental</name>
+	<language>es</language>
+	<adult>false</adult>
+	<active>true</active>
+
+	<version>4</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Canal reparado ya que no funcionaban los enlaces</description>
+		</change>
+		<change>
+			<date>01/07/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/areadocumental.png</bannermenu>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/areadocumental.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>documentary</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_documentales</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Documentales</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Sin color</lvalues>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

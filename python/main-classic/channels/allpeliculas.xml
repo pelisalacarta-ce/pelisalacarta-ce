@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>allpeliculas</id>
+	<name>Allpeliculas</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>false</adult>
+
+	<version>6</version>
+	<changes>
+		<change>
+			<date>24/06/2017</date>
+			<autor></autor>
+			<description>Url mal escritas</description>
+		</change>
+		<change>
+			<date>10/06/2017</date>
+			<autor></autor>
+			<description>Reparado búsqueda de videos</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Añadidas nuevas opciones y servidores</description>
+		</change>
+		<change>
+			<date>19/03/2016</date>
+			<autor></autor>
+			<description>Añadido soporte para la biblioteca y reparada busqueda global.</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/aWCDWtn.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/allpeliculas.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+		<category>vos</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

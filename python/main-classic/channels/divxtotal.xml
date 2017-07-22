@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>divxtotal</id>
+	<name>Divxtotal</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+    
+	<fanart></fanart>
+	<thumbnail>http://imgur.com/Madj03A.jpg</thumbnail>
+	<bannermenu></bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    
+    <version>2</version>
+    <changes>
+        <change>
+          <date>26/04/2017</date>
+          <autor></autor>
+          <description>Release</description>
+        </change>
+        <change>
+          <date>28/06/2017</date>
+          <autor></autor>
+          <description>Correciones código por cambios web</description>
+        </change>
+    </changes>
+    
+	<categories>
+		<category>torrent</category>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+    
+    <settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+    </settings>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

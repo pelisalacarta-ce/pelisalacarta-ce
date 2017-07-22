@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+    <id>pelisplanet</id>
+    <name>PelisPlanet</name>
+
+    <active>true</active>
+    <adult>false</adult>
+    <language>es</language>
+
+    <fanart>https://raw.githubusercontent.com/Inter95/tvguia/master/thumbnails/pelisplanetbg.png</fanart>
+    <thumbnail>https://raw.githubusercontent.com/Inter95/tvguia/master/thumbnails/pelisplanet.png</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/Inter95/tvguia/master/thumbnails/pelisplanetbaner.png</bannermenu>
+
+    <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    <version>5</version>
+
+    <changes>
+        <change>
+            <date>12/06/17</date>
+            <autor></autor>
+            <description>Canal nuevo</description>
+        </change>
+    </changes>
+
+    <categories>
+        <category>latino</category>
+        <category>movie</category>
+    </categories>
+
+    <settings>
+        <id>include_in_newest_peliculas</id>
+        <type>bool</type>
+        <label>Incluir en Novedades - Peliculas</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+    <settings>
+        <id>include_in_newest_infantiles</id>
+        <type>bool</type>
+        <label>Incluir en Novedades - Infantiles</label>
+        <default>false</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+
+    <settings>
+        <id>filter_languages</id>
+        <type>list</type>
+        <label>Mostrar enlaces en idioma...</label>
+        <default>0</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+        <lvalues>No filtrar</lvalues>
+        <lvalues>Latino</lvalues>
+        <lvalues>Castellano</lvalues>
+    </settings>
+</channel>

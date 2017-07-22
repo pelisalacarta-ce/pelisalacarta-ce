@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+   <id>miradetodo</id>
+   <name>MiraDeTodo</name>
+
+   <active>true</active>
+   <adult>false</adult>
+   <language>es</language>
+
+   <fanart></fanart>
+   <thumbnail>https://s17.postimg.org/e8kp12mcv/miradetodo.png</thumbnail>
+   <bannermenu>https://s7.postimg.org/it21t0dej/miradetodo-banner.png</bannermenu>
+
+   <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+   <version>2</version>
+   <changes>
+      <change>
+         <date>25/05/2017</date>
+         <autor></autor>
+         <description>cambios esteticos</description>
+      </change>
+      <change>
+         <date>05/05/2017</date>
+         <autor></autor>
+         <description>First release</description>
+      </change>
+   </changes>
+
+   <categories>
+      <category>latino</category>
+      <category>movie</category>
+   </categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+   <settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>ayuda</id>
+	<name>Ayuda</name>
+
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/ayuda.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/ayuda.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>5</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>17/02/2017</date>
+			<autor></autor>
+			<description>Optimizado el sistema de modificacion y restauracion de advancedsettings.xml. Creada alerta para equipos lentos o TV-BOX sobre 'ZeroCache'. Tambien se ha creado el apartado FAQ con atajos para dudas/problemas tipicos.</description>
+		</change>
+		<change>
+			<date>13/07/2016</date>
+			<autor></autor>
+			<description>Fixed: The "advancedsettings.xml" file optimization method now makes a backup before modifying it and, instead of replacing the file, it modifies the file and substitutes the optimised settings for streaming, all the modification are done inside the existing "advancedsettings.xml" file.</description>
+		</change>
+		<change>
+			<date>22/06/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change>
+			<date>28/08/2015</date>
+			<autor></autor>
+			<description>First pelisalacarta 4 release</description>
+		</change>
+	</changes>
+	<categories>
+		<category>movie</category>
+	</categories>
+
+
+
+
+</channel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>14/06/2016</date>
+			<description>Corregido al haberse desactivado la api que se usaba</description>
+		</change>
+	</changes>
+	<free>false</free>
+	<id>realdebrid</id>
+	<name>Real-Debrid</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>premium</id>
+		<label>Activar cuenta premium</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_realdebrid.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>2</version>
+</server>

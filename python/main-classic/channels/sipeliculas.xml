@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--- By EpNiebla -->
+<channel>
+	<id>sipeliculas</id>
+	<name>SiPeliculas</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s23.postimg.org/adrl2k5mz/sipeliculas.png</thumbnail>
+	<bannermenu>https://s24.postimg.org/5wcznkxhv/sipeliculas.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>16/01/17</date>
+			<autor></autor>
+			<description>First version</description>
+		</change>
+	</changes>
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+</channel>

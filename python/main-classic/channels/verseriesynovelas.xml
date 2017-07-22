@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>verseriesynovelas</id>
+	<name>Ver Series y Novelas</name>
+	<language>es</language>
+	<active>false</active>
+	<adult>false</adult>
+
+	<version>8</version>
+	<changes>
+		<change>
+			<date>17/05/2017</date>
+			<autor></autor>
+			<description>Canal desactivado por cambio de dominio, a la espera de si lo arreglan</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Ligeros cambios para mejorar la carga de enlaces</description>
+		</change>
+		<change>
+			<date>11/10/2016</date>
+			<autor></autor>
+			<description>Reparado por cambios en la web, ahora necesita registro</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/ZhQknRE.png</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/verseriesynovelas.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>latino</category>
+		<category>vos</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_series</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Series</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+	<settings>
+		<id>verseriesynovelasuser</id>
+		<type>text</type>
+		<label>@30014</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>verseriesynovelaspassword</id>
+		<type>text</type>
+		<hidden>true</hidden>
+		<label>@30015</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+</channel>

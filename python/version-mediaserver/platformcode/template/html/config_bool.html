@@ -1,0 +1,7 @@
+<li onmousemove="focus_element(this.getElementsByTagName('input')[0])">
+  <div class="control">
+    <span class="name" style='color:%item_color'>%item_label</span>
+    <input class="checkbox" onchange="evaluate_controls(this)" onfocus="this.parentNode.className='control control_focused'" onblur="this.parentNode.className='control'" type="checkbox" id="%item_id" %item_value>
+    <label class="checkbox"><i></i></label>
+  </div>
+</li>

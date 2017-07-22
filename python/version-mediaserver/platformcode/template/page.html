@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/media/favicon.ico" />
+
+        <!-- Web as app support -->
+        <link rel="manifest" href="/media/manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <!-- Navigation bar color -->
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#01455c">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#01455c">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#01455c">
+
+        <title>pelisalacarta</title>
+
+        <link rel="stylesheet" href="/media/css/pelisalacarta.css" />
+        <script type="text/javascript" src="/media/js/main.js"></script>
+        <script type="text/javascript" src="/media/js/vars.js"></script>
+        <script type="text/javascript" src="/media/js/ui.js"></script>
+        <script type="text/javascript" src="/media/js/navigation.js"></script>
+        <script type="text/javascript" src="/media/js/dialogs.js"></script>
+        <script type="text/javascript" src="/media/js/protocol.js"></script>
+        <script type="text/javascript" src="/media/js/socket.js"></script>
+        <script type="text/javascript" src="/media/js/utils.js"></script>
+        <script type="text/javascript">
+            websocket_host = 'ws://' + window.location.hostname + ':{$WSPORT}'
+        </script>
+    </head>
+
+    <body>
+        <!-- loading -->
+        <div class="window_loading" id="window_loading">
+            <span class="loading_animation"></span>
+            <a class="loading_message" id="loading_message" href="javascript:void(0)">Cargando...</a>
+        </div>
+
+        <!--/window_progress -->
+        <div class="window_background_progress" id="window_background_progress">
+            <div Class="window_heading" id="window_heading"></div>
+            <div Class="window_message" id="window_message"></div>
+            <div Class="progressbar_background" id="progressbar_background">
+                <div Class="progressbar" id="progressbar"></div>
+            </div>
+        </div>
+        <div class="window_overlay" id="window_overlay"></div>
+
+        <!-- window_select -->
+        <div class="window_select" id="window_select">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.RequestID, 'result':-1 });dialog.closeall();"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <ul class="control_list" id="control_list"></ul>
+        </div>
+
+        <!-- window_ok -->
+        <div class="window_ok" id="window_ok">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.RequestID, 'result':true });dialog.closeall();"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div Class="window_message" id="window_message"></div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':true });dialog.closeall();">Aceptar</a>
+            </div>
+        </div>
+
+        <!-- window_yesno -->
+        <div class="window_yesno" id="window_yesno">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.RequestID, 'result':false });dialog.closeall();"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div Class="window_message" id="window_message"></div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':true });dialog.closeall();">Si</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':false });dialog.closeall();">No</a>
+            </div>
+        </div>
+
+		<!-- window_notification -->
+        <div class="window_notification" id="window_notification">
+            <div class="window_icon" id="window_icon"></div>
+			<div Class="window_heading" id="window_heading"></div>
+            <div Class="window_message" id="window_message"></div>
+        </div>
+
+        <!--/window_progress -->
+        <div class="window_progress" id="window_progress">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="this.parentNode.querySelector('#canceled').checked='checked';this.parentNode.querySelector('#window_heading').innerHTML += ' Cancelando...';"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div Class="window_message" id="window_message"></div>
+            <div Class="progress_background" id="progress_background">
+                <div Class="progress" id="progress"></div>
+            </div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="this.parentNode.querySelector('#canceled').checked='checked';this.parentNode.parentNode.querySelector('#window_heading').innerHTML += ' Cancelando...';">Cancelar</a>
+                <input type="checkbox" style="display:none" id="canceled">
+            </div>
+        </div>
+
+        <!-- window_input -->
+        <div class="window_input" id="window_input">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.RequestID, 'result':null });dialog.closeall();"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div class="control_input" id="control_input">
+                <input class="control_input" id="window_value" type="text" onkeypress="if(event.keyCode == 13){send_data({'id':this.parentNode.parentNode.RequestID, 'result':this.value });dialog.closeall();loading.show();}">
+                <label class="control_input"></label>
+            </div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':this.parentNode.parentNode.getElementById('window_value').value});dialog.closeall();loading.show();">Aceptar</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':null });dialog.closeall();">Cancelar</a>
+            </div>
+        </div>
+
+		<!-- window_captcha -->
+        <div class="window_recaptcha" id="window_recaptcha">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.RequestID, 'result':null });dialog.closeall();"></a>
+            <div class="window_heading" id="window_heading"></div>
+			<div Class="window_message" id="window_message"></div>
+			<div class="window_image" id= "window_image">
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 0})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 1})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 2})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 3})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 4})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 5})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 6})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 7})"></a>
+				<a href="javascript:void(0)" onmouseover="this.focus()" onmouseout="this.blur()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result': 8})"></a>
+            </div>			
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':true});dialog.closeall();loading.show();">Aceptar</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':null });dialog.closeall();">Cancelar</a>
+				<a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="send_data({'id':this.parentNode.parentNode.RequestID, 'result':'refresh'});dialog.closeall();loading.show();">Recargar</a>
+
+            </div>
+        </div>
+
+        <!--/window_settings -->
+        <div id="window_settings" class="window_settings">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="dialog.closeall();if(this.parentNode.getElementById('window_footer').style.display != 'none'){save_config(false)}"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div class="category_container" id="category_container"></div>
+            <div class="controls_container" id="controls_container"></div>
+            <div class="window_footer" id="window_footer_local" style="display:none">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="save_settings();dialog.closeall()">Guardar</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="dialog.closeall()">Cerrar</a>
+            </div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button button_ok" onmouseover="this.focus()" onclick="dialog.closeall();save_config(true);">Guardar</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="dialog.closeall();save_config(false);">Cerrar</a>
+                <a href="javascript:void(0)" class="control_button" onmouseover="this.focus()" onclick="custom_button();" id="custom_button"></a>
+            </div>
+        </div>
+
+        <!--/window_info -->
+        <div class="window_info" id="window_info">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="dialog.closeall();info_window('close')"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div class="window_content">
+                <img class="info_fanart" id="info_fanart">
+                <img class="info_poster" id="info_poster">
+                <span class="line1_head" id="line1_head"></span><span class="line1" id="line1"></span>
+                <span class="line2_head" id="line2_head"></span><span class="line2" id="line2"></span>
+                <span class="line3_head" id="line3_head"></span><span class="line3" id="line3"></span>
+                <span class="line4_head" id="line4_head"></span><span class="line4" id="line4"></span>
+                <span class="line5_head" id="line5_head"></span><span class="line5" id="line5"></span>
+                <span class="line6_head" id="line6_head"></span><span class="line6" id="line6"></span>
+                <span class="line7_head" id="line7_head"></span><span class="line7" id="line7"></span>
+                <span class="line8_head" id="line8_head"></span><span class="line8" id="line8"></span>
+                <span class="page_info" id="page_info"></span>
+            </div>
+            <div class="window_footer" id="window_footer">
+                <a href="javascript:void(0)" class="control_button" id="previous" onmouseover="this.focus()" onclick="info_window('previous')">Anterior</a>
+                <a href="javascript:void(0)" class="control_button" id="next" onmouseover="this.focus()" onclick="info_window('next')">Siguiente</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="dialog.closeall();info_window('close')">Cancelar</a>
+                <a href="javascript:void(0)" class="control_button button_close" onmouseover="this.focus()" onclick="dialog.closeall();info_window('ok')">Aceptar</a>
+            </div>
+        </div>
+
+        <!-- window_player -->
+        <div class="window_player" id="window_player">
+            <a class="window_close" href="javascript:void(0)" onmouseover="this.focus()" onclick="dialog.closeall()"></a>
+            <div class="window_heading" id="window_heading"></div>
+            <div id="media_content" class="media_content"></div>
+        </div>
+
+        <div class="window" id="window">
+            <div class="header" id="header">
+                <div class="logo"></div>
+                <h1 class="heading" id="heading">pelisalacarta</h1>
+                <a class="settings" href="javascript:void(0)" onclick="dialog.settings()"></a>
+            </div>
+            <div class="content" id="content">
+                <div class="panel_info" id="panel_info">
+                    <div class="media_info" id="media_info">
+                        <img id="media_poster" src="" />
+                        <h3 id="media_title"></h3>
+                        <div id="media_plot"></div>
+                    </div>
+                    <div class="version_info" id="version_info">
+                        <span class="Version" id="version"></span><br/>
+                        <span class="Version" id="date"></span>
+                    </div>
+                </div>
+                <div class="panel_items" id="panel_items">
+                    <ul class="itemlist" id="itemlist" onscroll="show_images()">
+                    </ul>
+                </div>
+            </div>
+            <div class="footer" id="footer">
+                <div class="left">
+                </div>
+                <div class="links">
+                    <a href="http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta">Saber más sobre Pelisalacarta</a> | <a href="http://www.mimediacenter.info/foro">Foro</a>
+                </div>
+                <div class="status" id="status">Desconectado</div>
+            </div>
+        </div>
+    </body>
+
+</html>

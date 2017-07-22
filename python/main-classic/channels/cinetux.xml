@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>cinetux</id>
+	<name>Cinetux</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<version>8</version>
+	<changes>
+		<change>
+			<date>14/07/2017</date>
+			<autor></autor>
+			<description>Actualizado por cambio de estructura en la página</description>
+		</change>
+		<change>
+			<date>12/05/2017</date>
+			<autor></autor>
+			<description>Arreglada paginación y enlaces directos</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Adaptado a httptools y añadidos enlaces directos</description>
+		</change>
+		<change>
+			<date>08/07/2016</date>
+			<autor></autor>
+			<description>Correciones y adaptaciones a la nueva version</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/cinetux.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/cinetux.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_documentales</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Documentales</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+	<settings>
+		<id>filterlanguages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>VOSE</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>No filtrar</lvalues>
+	</settings>
+	<settings>
+		<id>filterlinks</id>
+		<type>list</type>
+		<label>Mostrar enlaces de tipo...</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Solo Descarga</lvalues>
+		<lvalues>Solo Online</lvalues>
+		<lvalues>No filtrar</lvalues>
+	</settings>
+	<settings>
+		<id>viewmode</id>
+		<type>list</type>
+		<label>Elegir vista por defecto (Confluence)...</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Sinopsis</lvalues>
+		<lvalues>Miniatura</lvalues>
+		<lvalues>Lista</lvalues>
+	</settings>
+</channel>

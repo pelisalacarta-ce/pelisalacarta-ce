@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelisxporno</id>
+	<name>Pelisxporno</name>
+
+	<active>true</active>
+	<adult>true</adult>
+	<language>es</language>
+	
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/ywMHwat.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pelisxporno.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<changes>
+		<change>
+			<date>28/05/2017</date>
+			<autor></autor>
+			<description>Corregido por cambios en toda la web</description>
+		</change>
+		<change>
+			<date>21/02/2017</date>
+			<autor></autor>
+			<description>Canal modernizado con los últimos cambios y mejorado</description>
+		</change>
+		<change>
+			<date>01/07/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+	</changes>
+	<version>5</version>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+	
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

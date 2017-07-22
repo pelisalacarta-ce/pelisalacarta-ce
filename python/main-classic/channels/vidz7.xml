@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>vidz7</id>
+	<name>Vidz7</name>
+
+	<active>true</active>
+	<adult>true</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://www.dropbox.com/s/7z31b4ixve2ge0l/thumbnail.png?dl=1</thumbnail>
+	<bannermenu>https://www.dropbox.com/s/182r0wby3ohnxkc/bannermenu.jpg?dl=1</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<changes>
+        <change>
+            <date>29/04/2017</date>
+            <autor></autor>
+            <description>Pequeña correción en la paginación</description>
+        </change>
+        <change>
+            <date>03/01/2017</date>
+            <autor></autor>
+            <description>Versión inicial</description>
+        </change>
+	</changes>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

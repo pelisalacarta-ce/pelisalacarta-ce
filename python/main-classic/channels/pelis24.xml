@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelis24</id>
+	<name>Pelis24</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://github.com/master-1970/resources/raw/master/images/squares/pelis24.PNG</thumbnail>
+	<bannermenu>https://github.com/master-1970/resources/raw/master/images/bannermenu/pelis24.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>9</version>
+
+	<changes>
+		<change>
+			<date>27/04/17</date>
+			<autor></autor>
+			<description>Adaptación por cambio de dominio y estructura</description>
+		</change>
+		<change>
+			<date>01/07/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario</description>
+		</change>
+	</changes>
+
+
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

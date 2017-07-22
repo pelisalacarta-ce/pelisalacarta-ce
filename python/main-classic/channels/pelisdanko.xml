@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelisdanko</id>
+	<name>PelisDanko</name>
+	<language>es</language>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<active>true</active>
+	<adult>false</adult>
+	<version>3</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>08/07/2016</date>
+			<autor></autor>
+			<description>Correcciones y adaptacion a la nueva version.</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/F2tBKkG.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pelisdanko.png</bannermenu>
+	<categories>
+		<category>movie</category>
+		<category>latino</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en búsqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>filterlanguages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>VOSE</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>No filtrar</lvalues>
+	</settings>
+	<settings>
+		<id>filterlinks</id>
+		<type>list</type>
+		<label>Mostrar enlaces de tipo...</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Solo Descarga</lvalues>
+		<lvalues>Solo Online</lvalues>
+		<lvalues>No filtrar</lvalues>
+	</settings>
+
+</channel>

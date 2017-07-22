@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>peliculasnu</id>
+	<name>Peliculas.Nu</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>false</adult>
+
+	<version>5</version>
+	<changes>
+		<change>
+			<date>12/05/2017</date>
+			<autor></autor>
+			<description>Corregidos enlaces directos</description>
+		</change>
+		<change>
+			<date>07/04/2017</date>
+			<autor></autor>
+			<description>Subtitulos en videos directos</description>
+		</change>
+		<change>
+			<date>12/03/2017</date>
+			<autor></autor>
+			<description>Añadida info de idiomas</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Versión inicial</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/2iupwXE.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/peliculasnu.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>vos</category>
+		<category>latino</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

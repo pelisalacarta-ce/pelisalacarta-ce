@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>crimenes</id>
+	<name>Crimenes Imperfectos</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/crimenes.png</bannermenu>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/crimenes.png</thumbnail>
+	<fanart></fanart>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+	<changes>
+		<change>
+			<date>19/06/2017</date>
+			<autor></autor>
+			<description>correcion xml</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/07/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>false</default>
+        <enabled>false</enabled>
+        <visible>false</visible>
+    </settings>
+</channel>

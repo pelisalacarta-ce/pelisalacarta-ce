@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>08/07/2017</date>
+			<description>Patrón actualizado</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>28/05/2017</date>
+			<description>Reparado por cambio de dominio</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>06/04/2017</date>
+			<description>Añadido deteccion de subtítulos en español e inglés</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>29/01/2017</date>
+			<description>Reparado por cambios, se elimina la detección de enlaces de yaske que ya no se usa</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>31/08/2015</date>
+			<description>Versión inicial</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>/netu/tv/(embed_)(.*?$)</pattern>
+			<url>http://netu.tv/watch_video.php?v=\2</url>
+		</patterns>
+		<patterns>
+			<pattern>(?:hqq|waaw|netu)(?:\.tv\/|\.watch\/|\.php\?).*?(?:v=|vid=)([A-z0-9]+)</pattern>
+			<url>http://netu.tv/watch_video.php?v=\1</url>
+		</patterns>
+		<patterns>
+			<pattern>(?:hqq|waaw|netu)(?:\.tv\/|\.watch\/|\.php\?).*hash=([A-z0-9]+)</pattern>
+			<url>http://hqq.tv/player/hash.php?hash=\1</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>
+		<value>netutv</value>
+		<value>netu</value>
+		<value>waaw</value>
+		<value>hqq</value>
+	</id>
+	<name>netutv</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_netutv.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>7</version>
+</server>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>novedades</id>
+	<name>Novedades</name>
+	
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+	
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>07/02/17</date>
+			<autor></autor>
+			<description>Añadir cuadro de progreso</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change> 
+			<date>29/04/16</date>
+			<autor></autor>
+			<description>Posibilidad de incluir otros canales, mediante configuracion</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>movie</category>
+	</categories>
+	
+	<settings>
+		<id>multithread</id>
+		<type>bool</type>
+		<label>Buscar de manera concurrente (multiprocesos)</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>result_mode</id>
+		<type>list</type>
+		<label>Mostrar resultados:</label>
+    	<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Agrupados por contenido</lvalues>
+		<lvalues>Agrupados por canales</lvalues>
+		<lvalues>Sin Agrupar</lvalues>
+	</settings>
+    <settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Frio</lvalues>
+		<lvalues>Calido</lvalues>
+		<lvalues>Lila</lvalues>
+        <lvalues>Pastel</lvalues>
+        <lvalues>Vivos</lvalues>
+	</settings>
+</channel>

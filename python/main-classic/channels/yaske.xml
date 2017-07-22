@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>yaske</id>
+	<name>Yaske</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart>https://github.com/master-1970/resources/raw/master/images/fanart/yaske.png</fanart>
+	<thumbnail>https://github.com/master-1970/resources/raw/master/images/squares/yaske.png</thumbnail>
+	<bannermenu>https://github.com/master-1970/resources/raw/master/images/bannermenu/yaske.png</bannermenu>
+
+	<update_url></update_url>
+	<version>15</version>
+
+	<changes>
+		<change>
+			<date>27/06/17</date>
+			<autor></autor>
+			<description>Desactivar por falta de contenidos</description>
+		</change>
+		<change>
+			<date>04/06/17</date>
+			<autor></autor>
+			<description>Desactivar por falta de contenidos</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/02/17</date>
+			<autor></autor>
+			<description>Añadir imagenes, sinopsis, etc...</description>
+		</change>
+		<change>
+			<date>18/01/17</date>
+			<autor></autor>
+			<description>Uso de httptools</description>
+		</change>
+		<change>
+			<date>12/12/16</date>
+			<autor></autor>
+			<description>Cambios en la web</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change> 
+			<date>29/04/16</date>
+			<autor></autor>
+			<description>Adaptar a Novedades Peliculas e Infantiles</description>
+		</change>
+	</changes>
+		
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

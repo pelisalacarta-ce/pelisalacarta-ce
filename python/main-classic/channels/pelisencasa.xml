@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+   <id>pelisencasa</id>
+   <name>PelisEnCasa</name>
+
+   <active>true</active>
+   <adult>false</adult>
+   <language>es</language>
+
+   <fanart></fanart>
+   <thumbnail>https://s14.postimg.org/iqiq0bxn5/pelisencasa.png</thumbnail>
+   <bannermenu>https://s18.postimg.org/j775ehbg9/pelisencasa_banner.png</bannermenu>
+
+   <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+   <version>1</version>
+   <date>17/03/2017</date>
+   <changes>First release</changes>
+
+   <categories>
+      <category>latino</category>
+      <category>movie</category>
+   </categories>
+
+   <settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

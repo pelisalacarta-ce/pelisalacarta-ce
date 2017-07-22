@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+   <id>ultrapeliculashd</id>
+   <name>UltraPeliculasHD</name>
+
+   <active>true</active>
+   <adult>false</adult>
+   <language>es</language>
+
+   <fanart></fanart>
+   <thumbnail>https://s13.postimg.org/d042quw9j/ultrapeliculashd.png</thumbnail>
+   <bannermenu>https://s9.postimg.org/5yxsq205r/ultrapeliculashd_banner.png</bannermenu>
+
+   <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+   <version>3</version>
+   <changes>
+       <change>
+				<date>25/05/2017</date>
+				<autor></autor>
+				<description>cambios esteticos</description>
+       </change>
+       <change>
+                <date>09/05/2017</date>
+                <autor></autor>
+                <description>Fix por cambio de estructra de la pagina</description>
+       </change>
+   </changes>
+
+   <categories>
+      <category>latino</category>
+      <category>movie</category>
+   </categories>
+
+   	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+   <settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

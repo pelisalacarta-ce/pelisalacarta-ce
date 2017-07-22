@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>personal</id>
+	<name>Personal</name>
+	<language>es</language>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<active>false</active>
+	<adult>false</adult>
+	<version>2</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/07/2016</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+	</changes>
+	<fanart></fanart>
+	<thumbnail></thumbnail>
+	<categories>
+		<category>anime</category>
+	</categories>
+</channel>

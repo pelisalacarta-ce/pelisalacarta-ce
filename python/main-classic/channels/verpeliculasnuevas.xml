@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>verpeliculasnuevas</id>
+	<name>VerPeliculasNuevas</name>
+
+	<compatible>
+		<addon_version>4.3</addon_version>
+	</compatible>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s27.postimg.org/atgs5erab/verpeliculasnuevas.png</thumbnail>
+	<bannermenu>https://s23.postimg.org/4uyyz6w4b/verpeliculasnuevas_banner.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>6</version>
+	<changes>
+		<change>
+				<date>23/06/2017</date>
+				<autor></autor>
+				<description>añadidos servidores favoritos en find_videos</description>
+	   	</change>
+		<change>
+				<date>06/06/2017</date>
+				<autor></autor>
+				<description>compatibilidad con AutoPlay</description>
+	   	</change>
+		<change>
+				<date>25/05/2017</date>
+				<autor></autor>
+				<description>cambios esteticos</description>
+	   	</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>06/01/2017</date>
+			<autor></autor>
+			<description>Release.</description>
+		</change>
+	</changes>
+
+
+	<categories>
+		<category>latino</category>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+
+	<settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>VOS</lvalues>
+	</settings>
+
+<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_infantiles</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Infantiles</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>05/03/2017</date>
+			<description>Reparado por cambios</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>09/02/2017</date>
+			<description>Reparado y adaptado al uso de httptools</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>25/03/2016</date>
+			<description>Versión inicial</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+			<value>http://www.yourupload.com/embed/embed</value>
+		</ignore_urls>
+		<patterns>
+			<pattern>yourupload.com/embed/([A-z0-9]+)</pattern>
+			<url>http://www.yourupload.com/embed/\1</url>
+		</patterns>
+		<patterns>
+			<pattern>embed[./]yourupload.com(?:/|.php\?url=)([A-z0-9]+)</pattern>
+			<url>http://www.yourupload.com/embed/\1</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>yourupload</id>
+	<name>yourupload</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_yourupload.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>4</version>
+</server>

@@ -1,0 +1,7 @@
+<li onmousemove="focus_element(this.getElementsByTagName('select')[0])">
+  <div class="control">
+    <span class="name" style='color:%item_color'>%item_label</span>
+    <select class="list" onchange="evaluate_controls(this)" name="%item_type" onfocus="this.parentNode.className='control control_focused'" onblur="this.parentNode.className='control'" id="%item_id">%item_values</select>
+    <label class="list"><i></i></label>
+  </div>
+</li>

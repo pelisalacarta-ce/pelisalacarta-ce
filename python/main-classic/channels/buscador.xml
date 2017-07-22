@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>buscador</id>
+	<name>Buscador global</name>
+
+	<active>false</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/buscador.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/buscador.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>5</version>
+
+	<changes>
+		<change>
+			<date>25/05/17</date>
+			<autor></autor>
+			<description>añadido control parental</description>
+		</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>17/02/17</date>
+			<autor></autor>
+			<description>Cambios de detalles visuales</description>
+		</change>
+		<change>
+			<date>06/12/16</date>
+			<autor></autor>
+			<description>Añadir al menu: 'Recordar última búsqueda'</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change>
+			<date>???</date>
+			<autor></autor>
+			<description>Multihilos y seleccion de canales(gracias a Divadr)</description>
+		</change>
+	</changes>
+
+
+	<categories>
+		<category>movie</category>
+	</categories>
+
+	<settings>
+		<id>multithread</id>
+		<type>bool</type>
+		<label>Buscador MultiThread</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>result_mode</id>
+		<type>list</type>
+		<label>Mostrar resultados:</label>
+    	<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Por canales</lvalues>
+		<lvalues>Todo junto</lvalues>
+	</settings>
+	<settings>
+		<id>saved_searches_limit</id>
+		<type>list</type>
+		<label>Busquedas guardadas:</label>
+    	<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>10</lvalues>
+		<lvalues>20</lvalues>
+		<lvalues>30</lvalues>
+		<lvalues>40</lvalues>
+	</settings>
+	<settings>
+		<id>last_search</id>
+		<type>bool</type>
+		<label>Recordar última búsqueda</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+
+</channel>

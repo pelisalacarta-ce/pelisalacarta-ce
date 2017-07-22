@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>animeshd</id>
+	<name>AnimesHD</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s21.postimg.org/b43i3ljav/animeshd.png</thumbnail>
+	<bannermenu>https://s4.postimg.org/lulxulmql/animeshd-banner.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>3</version>
+	<changes>
+		<change>
+			<date>03/06/2017</date>
+			<autor></autor>
+			<description>limpieza de codigo</description>
+		</change>
+		<change>
+			<date>25/05/2017</date>
+			<autor></autor>
+			<description>cambios esteticos</description>
+		</change>
+		<change>
+			<date>19/05/2017</date>
+			<autor></autor>
+			<description>First release</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>latino</category>
+		<category>anime</category>
+	</categories>
+	
+</channel>

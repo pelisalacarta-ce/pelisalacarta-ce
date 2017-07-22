@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>javus</id>
+	<name>javus.net</name>
+
+	<active>true</active>
+	<adult>true</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s15.postimg.org/pzd3h4vy3/javus.png</thumbnail>
+	<bannermenu>https://s21.postimg.org/5pqzedp2f/javus_banner.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>2</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>01/12/2016</date>
+			<autor></autor>
+			<description>Release.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>false</default>
+		<enabled>false</enabled>
+		<visible>false</visible>
+	</settings>
+</channel>

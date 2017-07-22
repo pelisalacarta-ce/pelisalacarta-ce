@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>documaniatv</id>
+	<name>DocumaniaTV</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/qMR9sg9.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/documaniatv.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>12</version>
+
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>11/07/2016</date>
+			<autor></autor>
+			<description>Reparadas cuentas de usuario.</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>documentary</category>
+	</categories>
+
+	<settings>
+		<id>include_in_newest_documentales</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Documentales</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>documaniatvaccount</id>
+		<type>bool</type>
+		<label>Usar cuenta de documaniatv</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>documaniatvuser</id>
+		<type>text</type>
+		<label>Usuario</label>
+		<color>0xFFd50b0b</color>
+		<default></default>
+		<enabled>eq(-1,true)</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>documaniatvpassword</id>
+		<type>text</type>
+		<label>Contraseña</label>
+		<color>0xFFd50b0b</color>
+		<default></default>
+		<enabled>!eq(-1,)+eq(-2,true)</enabled>
+		<visible>true</visible>
+		<hidden>True</hidden>
+	</settings>
+</channel>

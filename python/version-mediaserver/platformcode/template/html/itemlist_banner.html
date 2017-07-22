@@ -1,0 +1,10 @@
+<li class="item_banner">
+  <a class="item %item_class" onblur="unload_info(this)" oncontextmenu="dialog.menu('Menu','%menu_items');return false" onfocus="focused_item=this;load_info(this, 'banner')" onmouseover="focus_element(this)" href="javascript:void(0)" onclick="send_request('%item_url')">
+    <img class="thumbnail" onerror="this.style.visibility='hidden'">
+    <h3 class="label">%item_title</h3>
+	<label class="thumbnail">%item_thumbnail</label>
+    <label class="plot">%item_plot</label>
+	<label class="fanart">%item_fanart</label>
+  </a>
+  %item_menu
+</li>

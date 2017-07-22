@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>vernovelasonline</id>
+	<name>Ver Novelas Online</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s16.postimg.org/g4lzydrmd/vernovelasonline1.png</thumbnail>
+	<bannermenu>https://s16.postimg.org/w44nhxno5/vernovelasonline2.png</bannermenu>
+	
+	<update_url>1</update_url>
+	<version>1</version>
+	<changes>
+            <change>
+                    <date>28/06/2017</date>
+			        <autor></autor>
+                    <description>Primera version</description>
+            </change>        
+	</changes>
+	<categories>
+		<category>serie</category>
+		<category>latino</category>
+	</categories>
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

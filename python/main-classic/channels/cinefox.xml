@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>cinefox</id>
+	<name>Cinefox</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<version>3</version>
+	<changes>
+		<change>
+			<date>05/04/2017</date>
+			<autor></autor>
+			<description>Cambio en los servidores</description>
+		</change>
+		<change>
+			<date>21/03/2017</date>
+			<autor></autor>
+			<description>Adaptado a httptools y corregido episodios para biblioteca</description>
+		</change>
+		<change>
+			<date>18/07/2016</date>
+			<autor></autor>
+			<description>Primera version</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/squares/cinefox.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/cinefox.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>latino</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>include_in_global_search</id>
+		<type>bool</type>
+		<label>Incluir en busqueda global</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>save_last_search</id>
+		<type>bool</type>
+		<label>Guardar última búsqueda</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Películas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_series</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Series</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>2</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+		<lvalues>Ninguno</lvalues>
+	</settings>
+	<settings>
+		<id>menu_info</id>
+		<type>bool</type>
+		<label>Mostrar menú intermedio película/episodio</label>
+ 		<default>true</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>last_page</id>
+		<type>bool</type>
+		<label>Ocultar opción elegir página en películas (Kodi)</label>
+ 		<default>false</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>filtro_defecto_peliculas</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas1</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas2</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_peliculas3</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>filtro_defecto_series</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_series1</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_series2</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>pers_series3</id>
+		<type>label</type>
+		<label></label>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+	<settings>
+		<id>last_search</id>
+		<type>text</type>
+ 		<default></default>
+ 		<enabled>true</enabled>
+ 		<visible>false</visible>
+ 	</settings>
+</channel>

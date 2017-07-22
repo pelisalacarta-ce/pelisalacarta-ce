@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>25/03/2016</date>
+			<description>Versión incial</description>
+		</change>
+	</changes>
+	<free>false</free>
+	<id>alldebrid</id>
+	<name>All-Debrid</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>premium</id>
+		<label>Activar cuenta premium</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default></default>
+		<enabled>eq(-1,true)</enabled>
+		<id>user</id>
+		<label>@30014</label>
+		<type>text</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default></default>
+		<enabled>eq(-2,true)+!eq(-1,'')</enabled>
+		<hidden>true</hidden>
+		<id>password</id>
+		<label>@30015</label>
+		<type>text</type>
+		<visible>true</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_alldebrid.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>1</version>
+</server>

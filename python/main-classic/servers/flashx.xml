@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>21/07/2017</date>
+			<description>Actualizado get_video_url</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>21/03/2017</date>
+			<description>Mejorado el test de video y uso de httptools</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>04/06/2016</date>
+			<description>Reparado por cambio en la url embebida</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>flashx.(?:tv|pw)/(?:embed.php\?c=|embed-|playvid-|)([A-z0-9]+)</pattern>
+			<url>https://www.flashx.tv/playvid-\1.html</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>flashx</id>
+	<name>flashx</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>http://media.tvalacarta.info/servers/server_flashx.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>5</version>
+</server>

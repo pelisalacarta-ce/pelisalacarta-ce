@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>pelispedia</id>
+	<name>PelisPedia</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart>http://i.imgur.com/9QbyJrf.jpg</fanart>
+	<thumbnail>http://i.imgur.com/g3QiMOs.png</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/pelispedia.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>8</version>
+
+	<changes>
+		<change>
+			<date>07/06/17</date>
+			<autor></autor>
+			<description>Reconoce servidor raptu</description>
+		</change>
+		<change>
+			<date>21/04/17</date>
+			<autor></autor>
+			<description>Corregido método play, fix ordenación de episodios</description>
+		</change>
+		<change>
+			<date>06/04/17</date>
+			<autor></autor>
+			<description>Se permite configurar sin color, varias correcciones</description>
+		</change>
+		<change>
+			<date>01/02/17</date>
+			<autor></autor>
+			<description>Corregido método play</description>
+		</change>
+		<change>
+			<date>19/07/16</date>
+			<autor></autor>
+			<description>Corregido el método play</description>
+		</change>
+		<change>
+			<date>01/07/16</date>
+			<autor></autor>
+			<description>Eliminado código innecesario.</description>
+		</change>
+		<change>
+			<date>06/06/16</date>
+			<autor></autor>
+			<description>Añadida info extra de tmdb. Añadido el canal en la busqueda de novedades</description>
+		</change>
+	</changes>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+		<category>vos</category>
+	</categories>
+
+	<settings>
+		<id>modo_grafico</id>
+		<type>bool</type>
+		<label>Buscar información extra</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Sin color</lvalues>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+	<settings>
+		<id>orden_episodios</id>
+		<type>bool</type>
+		<label>Mostrar los episodios de las series en orden descendente</label>
+		<default>false</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<id>include_in_newest_peliculas</id>
+		<type>bool</type>
+		<label>Incluir en Novedades - Peliculas</label>
+		<default>true</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+	</settings>
+</channel>

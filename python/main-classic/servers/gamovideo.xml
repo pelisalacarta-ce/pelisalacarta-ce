@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<server>
+	<active>true</active>
+	<changes>
+		<change>
+			<autor></autor>
+			<date>07/07/17</date>
+			<description>Actualizado get_url_video</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>09/05/17</date>
+			<description>Arreglado con el cambio de user agent</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>24/04/17</date>
+			<description>Detectado mensaje:video se está procesando</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>23/03/17</date>
+			<description>Arreglado con el cambio de user agent</description>
+		</change>
+		<change>
+			<autor></autor>
+			<date>07/11/16</date>
+			<description>Modificado orden de los videos</description>
+		</change>
+	</changes>
+	<find_videos>
+		<ignore_urls>
+		</ignore_urls>
+		<patterns>
+			<pattern>gamovideo.com/(?:embed-|)([a-z0-9]+)</pattern>
+			<url>http://gamovideo.com/embed-\1.html</url>
+		</patterns>
+	</find_videos>
+	<free>true</free>
+	<id>gamovideo</id>
+	<name>gamovideo</name>
+	<premium>
+	</premium>
+	<settings>
+		<default>false</default>
+		<enabled>true</enabled>
+		<id>black_list</id>
+		<label>Incluir en lista negra</label>
+		<type>bool</type>
+		<visible>true</visible>
+	</settings>
+	<settings>
+		<default>0</default>
+		<enabled>true</enabled>
+		<id>favorites_servers_list</id>
+		<label>Incluir en lista de favoritos</label>
+		<lvalues>No</lvalues>
+		<lvalues>1</lvalues>
+		<lvalues>2</lvalues>
+		<lvalues>3</lvalues>
+		<lvalues>4</lvalues>
+		<lvalues>5</lvalues>
+		<type>list</type>
+		<visible>false</visible>
+	</settings>
+	<thumbnail>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/servers/server_gamovideo.png</thumbnail>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/servers/</update_url>
+	<version>7</version>
+</server>

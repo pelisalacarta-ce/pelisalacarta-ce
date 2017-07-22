@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+    <id>seriespapaya</id>
+    <name>SeriesPapaya</name>
+
+    <active>true</active>
+    <adult>false</adult>
+    <language>es</language>
+
+    <fanart></fanart>
+    <thumbnail>http://i.imgur.com/P1D92cf.png</thumbnail>
+    <bannermenu>http://i.imgur.com/OHHvi5z.png</bannermenu>
+
+    <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+    <version>2</version>
+
+    <changes>
+        <change>
+			<date>06/04/2017</date>
+			<autor></autor>
+			<description>Mejoras en filtertools</description>
+		</change>
+        <change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+        <change>
+            <date>02/10/2016</date>
+            <description>Primera version</description>
+        </change>
+    </changes>
+
+    <categories>
+        <category>serie</category>
+        <category>anime</category>
+    </categories>
+
+    <settings>
+		<id>filter_languages</id>
+		<type>list</type>
+		<label>Mostrar enlaces en idioma...</label>
+		<default>0</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>No filtrar</lvalues>
+		<lvalues>Español</lvalues>
+		<lvalues>Inglés</lvalues>
+		<lvalues>Latino</lvalues>
+		<lvalues>Catalán</lvalues>
+		<lvalues>VOS</lvalues>
+	</settings>
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+    <settings>
+        <id>include_in_newest_series</id>
+        <type>bool</type>
+        <label>Incluir en Novedades - Episodios de series</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+</channel>

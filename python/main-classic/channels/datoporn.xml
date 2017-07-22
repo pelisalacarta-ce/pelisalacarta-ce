@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>datoporn</id>
+	<name>DatoPorn</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>true</adult>
+
+	<changes>
+		<change>
+			<date>28/05/2017</date>
+			<autor></autor>
+			<description>Reparado por cambios en la página</description>
+		</change>
+		<change>
+			<date>21/02/2017</date>
+			<autor></autor>
+			<description>Primera versión</description>
+		</change>
+	</changes>
+	<version>2</version>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/tBSWudd.png?1</thumbnail>
+	<bannermenu></bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>adult</category>
+	</categories>
+
+</channel>

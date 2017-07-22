@@ -1,0 +1,30 @@
+﻿<?xml version="0.1" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>serieslan</id>
+	<name>SeriesLan</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/s6CBxlw.png</thumbnail>
+	<bannermenu>http://i.imgur.com/c1YTgNT.png</bannermenu>
+
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>1</version>
+	
+    <changes>
+		<change>
+			<date>09/06/2017</date>
+			<autor></autor>
+			<description>Primera version de series en Latino</description>
+		</change>
+	</changes>
+	
+	<categories>
+		<category>serie</category>
+                <category>latino</category>
+	</categories>
+
+</channel>

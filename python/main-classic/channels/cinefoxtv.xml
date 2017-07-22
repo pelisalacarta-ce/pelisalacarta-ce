@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+    <id>cinefoxtv</id>
+    <name>CineFoxTV</name>
+
+    <active>true</active>
+    <adult>false</adult>
+    <language>es</language>
+
+    <fanart></fanart>
+    <thumbnail>https://s28.postimg.org/lytn2q1tp/cinefoxtv.png</thumbnail>
+    <bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/cinefoxtv.png</bannermenu>
+
+    <update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/
+    </update_url>
+    <version>3</version>
+
+    <changes>
+        <change>
+            <date>22/05/2017</date>
+            <autor></autor>
+            <description>fix por cambio en la estructura</description>
+        </change>
+        <change>
+            <date>15/03/2017</date>
+            <autor></autor>
+            <description>limpieza código</description>
+        </change>
+        <change>
+            <date>09/02/2017</date>
+            <autor></autor>
+            <description>First release.</description>
+        </change>
+    </changes>
+
+    <categories>
+        <category>latino</category>
+        <category>movie</category>
+    </categories>
+
+    <settings>
+        <id>include_in_global_search</id>
+        <type>bool</type>
+        <label>Incluir en busqueda global</label>
+        <default>false</default>
+        <enabled>false</enabled>
+        <visible>false</visible>
+    </settings>
+    <settings>
+        <id>include_in_newest_peliculas</id>
+        <type>bool</type>
+        <label>Incluir en Novedades - Peliculas</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+    <settings>
+        <id>include_in_newest_infantiles</id>
+        <type>bool</type>
+        <label>Incluir en Novedades - Infantiles</label>
+        <default>true</default>
+        <enabled>true</enabled>
+        <visible>true</visible>
+    </settings>
+</channel>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>copiapop</id>
+	<name>Copiapop/Diskokosmiko</name>
+	<language>es</language>
+	<active>true</active>
+	<adult>false</adult>
+
+	<version>2</version>
+	<changes>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>16/02/2017</date>
+			<autor></autor>
+			<description>Primera versión</description>
+		</change>
+	</changes>
+
+	<fanart></fanart>
+	<thumbnail>http://i.imgur.com/EjbfM7p.png?1</thumbnail>
+	<bannermenu>https://raw.githubusercontent.com/pelisalacarta-ce/media/master/pelisalacarta/bannermenu/copiapop.png</bannermenu>
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+
+	<categories>
+		<category>movie</category>
+		<category>serie</category>
+	</categories>
+
+	<settings>
+		<id>copiapopuser</id>
+		<type>text</type>
+		<color>0xFF25AA48</color>
+		<label>Usuario Copiapop</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>copiapoppassword</id>
+		<type>text</type>
+		<color>0xFF25AA48</color>
+		<hidden>true</hidden>
+		<label>Password Copiapop</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>diskokosmikouser</id>
+		<type>text</type>
+		<color>0xFFC52020</color>
+		<label>Usuario Diskokosmiko</label>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>diskokosmikopassword</id>
+		<type>text</type>
+		<color>0xFFC52020</color>
+		<hidden>true</hidden>
+		<label>Password Diskokosmiko</label>
+		<enabled>!eq(-1,'')</enabled>
+		<visible>true</visible>
+		<default></default>
+	</settings>
+	<settings>
+		<id>adult_content</id>
+		<type>bool</type>
+		<color>0xFFd50b0b</color>
+		<label>Mostrar contenido adulto en las búsquedas</label>
+ 		<default>false</default>
+ 		<enabled>true</enabled>
+ 		<visible>true</visible>
+ 	</settings>
+	<settings>
+		<id>perfil</id>
+		<type>list</type>
+		<label>Perfil de color</label>
+		<default>3</default>
+		<enabled>true</enabled>
+		<visible>true</visible>
+		<lvalues>Sin color</lvalues>
+		<lvalues>Perfil 3</lvalues>
+		<lvalues>Perfil 2</lvalues>
+		<lvalues>Perfil 1</lvalues>
+	</settings>
+</channel>

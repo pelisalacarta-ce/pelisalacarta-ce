@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<channel>
+	<id>qserie</id>
+	<name>QSerie</name>
+
+	<active>true</active>
+	<adult>false</adult>
+	<language>es</language>
+
+	<fanart></fanart>
+	<thumbnail>https://s31.postimg.org/dousrbu9n/qserie.png</thumbnail>
+	<bannermenu>https://s32.postimg.org/nk1quq1wl/qserie_banner.png</bannermenu>
+	
+	<update_url>https://raw.githubusercontent.com/pelisalacarta-ce/pelisalacarta-ce/master/python/main-classic/channels/</update_url>
+	<version>6</version>
+	<changes>
+		<change>
+				<date>25/05/2017</date>
+				<autor></autor>
+				<description>cambios esteticos</description>
+	   	</change>
+		<change>
+			<date>15/03/2017</date>
+			<autor></autor>
+			<description>limpieza código</description>
+		</change>
+		<change>
+			<date>04/01/2017</date>
+			<autor></autor>
+			<description>Release.</description>
+		</change>
+	</changes>
+
+
+	<categories>
+		<category>latino</category>
+		<category>serie</category>
+	</categories>
+	
+	
+
+</channel>
